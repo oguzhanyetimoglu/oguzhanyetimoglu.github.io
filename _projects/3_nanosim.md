@@ -41,6 +41,7 @@ Nanosim is a cutting-edge, high-performance simulation library specifically desi
 ## Real-World Applications
 
 The library is currently employed in various research applications, including:
+
 - Biomedical communication systems
 - Nano-scale networking protocols
 - Drug delivery system modeling

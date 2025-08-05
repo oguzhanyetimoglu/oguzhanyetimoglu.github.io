@@ -89,12 +89,7 @@
       "startDate": "2023-10-01",
       "endDate": "",
       "score": "",
-      "courses": [
-        "Cybersecurity",
-        "Large Language Models (LLMs)",
-        "Software Architecture",
-        "Distributed Systems"
-      ]
+      "courses": ["Cybersecurity", "Large Language Models (LLMs)", "Software Architecture", "Distributed Systems"]
     },
     {
       "institution": "Boğaziçi University",
@@ -104,11 +99,7 @@
       "startDate": "2020-09-01",
       "endDate": "2023-02-01",
       "score": "",
-      "courses": [
-        "Molecular Communications",
-        "Signal Processing",
-        "Research Methodology"
-      ]
+      "courses": ["Molecular Communications", "Signal Processing", "Research Methodology"]
     },
     {
       "institution": "Boğaziçi University",
@@ -118,60 +109,29 @@
       "startDate": "2015-09-01",
       "endDate": "2020-06-01",
       "score": "",
-      "courses": [
-        "Data Structures and Algorithms",
-        "Software Engineering",
-        "Database Systems",
-        "Computer Networks"
-      ]
+      "courses": ["Data Structures and Algorithms", "Software Engineering", "Database Systems", "Computer Networks"]
     }
   ],
   "skills": [
     {
       "name": "Programming Languages",
       "level": "Advanced",
-      "keywords": [
-        "Java",
-        "Python",
-        "JavaScript",
-        "TypeScript",
-        "C++",
-        "C#",
-        "SQL"
-      ]
+      "keywords": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C#", "SQL"]
     },
     {
       "name": "Web Technologies",
       "level": "Advanced",
-      "keywords": [
-        "React.js",
-        "Node.js",
-        "HTML5",
-        "CSS3",
-        "RESTful APIs"
-      ]
+      "keywords": ["React.js", "Node.js", "HTML5", "CSS3", "RESTful APIs"]
     },
     {
       "name": "Databases & Tools",
       "level": "Intermediate",
-      "keywords": [
-        "MongoDB",
-        "PostgreSQL",
-        "Docker",
-        "Git",
-        "Azure Cloud",
-        "Apache NiFi"
-      ]
+      "keywords": ["MongoDB", "PostgreSQL", "Docker", "Git", "Azure Cloud", "Apache NiFi"]
     },
     {
       "name": "Machine Learning & AI",
       "level": "Intermediate",
-      "keywords": [
-        "TensorFlow",
-        "PyTorch",
-        "Scikit-learn",
-        "Large Language Models (LLMs)"
-      ]
+      "keywords": ["TensorFlow", "PyTorch", "Scikit-learn", "Large Language Models (LLMs)"]
     }
   ],
   "languages": [
@@ -192,58 +152,33 @@
     {
       "name": "FinK Analytica",
       "description": "Comprehensive financial analysis platform for investment insights",
-      "highlights": [
-        "Financial data analysis",
-        "Investment portfolio management",
-        "Real-time market insights"
-      ],
-      "keywords": [
-        "Finance",
-        "Analytics",
-        "Investment"
-      ],
-      "type": "application"
+      "highlights": ["Financial data analysis", "Investment portfolio management", "Real-time market insights"],
+      "keywords": ["Finance", "Analytics", "Investment"],
+      "type": "application",
+      "url": "/projects/1_fink_analytica/"
     },
     {
       "name": "Elysio.ai",
       "description": "AI-powered fashion application with recommendation system",
-      "highlights": [
-        "AI-powered recommendations",
-        "Fashion trend analysis",
-        "User preference learning"
-      ],
-      "keywords": [
-        "AI",
-        "Fashion",
-        "Machine Learning"
-      ],
-      "type": "application"
+      "highlights": ["AI-powered recommendations", "Fashion trend analysis", "User preference learning"],
+      "keywords": ["AI", "Fashion", "Machine Learning"],
+      "type": "application",
+      "url": "/projects/2_elysio_ai/"
     },
     {
       "name": "Nanosim",
       "description": "High-performance GPU-accelerated molecular simulation library",
-      "highlights": [
-        "GPU acceleration",
-        "Molecular dynamics simulation",
-        "High-performance computing"
-      ],
-      "keywords": [
-        "GPU",
-        "Simulation",
-        "HPC"
-      ],
-      "type": "library"
+      "highlights": ["GPU acceleration", "Molecular dynamics simulation", "High-performance computing"],
+      "keywords": ["GPU", "Simulation", "HPC"],
+      "type": "library",
+      "url": "/projects/3_nanosim/"
     },
     {
       "name": "TempoCraft",
       "description": "Spotify BPM Playlist Creator for workout and mood-based music discovery",
-      "highlights": [
-        "Spotify API integration",
-        "BPM-based playlist generation",
-        "User-friendly interface"
-      ],
-      "type": "application"
-
+      "highlights": ["Spotify API integration", "BPM-based playlist generation", "User-friendly interface"],
+      "type": "application",
+      "url": "/projects/4_tempocraft/"
     }
   ],
   "publications": [

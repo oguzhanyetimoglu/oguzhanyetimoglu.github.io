@@ -15,7 +15,6 @@ profile:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
 ---
 
 Hey! I’m Oğuzhan, a software engineer and a Master’s student at the Technical University of Munich (TUM).
