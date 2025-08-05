@@ -41,16 +41,16 @@
       ]
     },
     {
-      "name": "Ludwig Maximilian University (LMU)",
-      "position": "Research & Teaching Assistant",
+      "name": "Ludwig Maximilian University (Munich)",
+      "position": "Graduate Research Assistant",
       "url": "https://lmu.de",
-      "startDate": "2024-04-01",
-      "endDate": "2024-05-31",
-      "summary": "Conduct research in molecular communications and nano-networks while assisting in undergraduate teaching.",
+      "startDate": "2023-10-01",
+      "endDate": "2024-06-01",
+      "summary": "Automated large-scale data cleaning and ETL with Python; performed ML/statistical analyses on Linux clusters; optimized job scheduling for cluster throughput and resource utilization.",
       "highlights": [
-        "Research in molecular communications and nano-networks",
-        "Teaching assistance for computer science courses",
-        "Academic publication collaboration"
+        "Automated large-scale data cleaning and ETL with Python",
+        "Ran ML/statistical analyses on Linux clusters",
+        "Optimized job scheduling to maximize cluster throughput and resource use"
       ]
     },
     {

@@ -25,4 +25,4 @@ While my main focus is software engineering, I’ve recently been exploring the 
 
 Over the past few years, I’ve worked on a variety of projects across different teams and company sizes. What I’ve learned is that I enjoy clear, focused engineering, and I’m happiest when I’m learning something new while shipping useful things.
 
-Outside of work, I’m into running, working out, and historical strategy games—Europa Universalis IV is a favorite. Whether it’s in code or gameplay, I enjoy breaking down complex systems and finding patterns that make them work better.
+Outside of work, I’m into running and working out. Whether it’s in code or daily life, I enjoy breaking down complex systems and finding patterns that make them work better.
