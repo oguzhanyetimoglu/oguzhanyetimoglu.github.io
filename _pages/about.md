@@ -2,33 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: M.Sc. Computer Science Student at <a href='https://www.tum.de/'>Technical University of Munich</a> • Working Student at <a href='https://www.siemens.com/'>Siemens</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  # image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Munich, Germany</p>
+    <p>oguzhanyetimoglu@gmail.com</p>
+    <p>+49-15731621114</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hey! I’m Oğuzhan, a software engineer and a Master’s student at the Technical University of Munich (TUM).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Right now, I’m working part-time at Siemens, where I contribute to internal tools used for cybersecurity monitoring. Most of my background is in software engineering, especially fullstack development, and I really enjoy building systems that are practical, stable, and actually get used.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+While my main focus is software engineering, I’ve recently been exploring the cybersecurity space more actively, especially through my Master’s thesis, where I’m applying large language models to detect anomalies in network traffic.
+
+Over the past few years, I’ve worked on a variety of projects across different teams and company sizes. What I’ve learned is that I enjoy clear, focused engineering, and I’m happiest when I’m learning something new while shipping useful things.
+
+Outside of work, I’m into running, working out, and historical strategy games—Europa Universalis IV is a favorite. Whether it’s in code or gameplay, I enjoy breaking down complex systems and finding patterns that make them work better.
