@@ -14,11 +14,11 @@ export default function Publications() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase">04 — Research</p>
-          <h2 className="text-3xl font-bold text-slate-100 mb-12">Publications</h2>
+          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">04 — Research</p>
+          <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center">Publications</h2>
         </motion.div>
 
-        <div className="space-y-3 max-w-3xl">
+        <div className="space-y-3 max-w-3xl mx-auto">
           {publications.map((pub, i) => (
             <motion.div
               key={i}
@@ -52,7 +52,7 @@ export default function Publications() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.5 }}
-          className="mt-8"
+          className="mt-8 max-w-3xl mx-auto"
         >
           <a
             href="https://scholar.google.com/citations?user=UIJ8VVwAAAAJ&hl=en"

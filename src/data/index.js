@@ -57,47 +57,76 @@ export const projects = [
 
 export const experience = [
   {
-    title: "Working Student — Software Engineer",
+    title: "Software Engineer (Working Student)",
     company: "Siemens",
     location: "Munich, Germany",
-    period: "June 2024 – Sep 2025",
+    period: "06/2024 – 09/2025",
     items: [
-      "Maintain and enhance security monitoring/analytics software using Java, Docker, Azure Cloud",
-      "Develop LLM-based anomaly detection system for security threat identification",
-      "Implement DevOps processes including CI/CD pipelines and containerization",
-    ],
-  },
-  {
-    title: "Research & Teaching Assistant",
-    company: "Ludwig Maximilian University (LMU)",
-    location: "Munich, Germany",
-    period: "April 2024 – May 2024",
-    items: [
-      "Research in molecular communications and nano-networks",
-      "Assisted in teaching undergraduate CS courses",
-      "Collaborated on academic publications",
-    ],
-  },
-  {
-    title: "Full-Stack Software Engineer",
-    company: "Aimyca GmbH",
-    location: "Munich, Germany",
-    period: "March 2023 – March 2024",
-    items: [
-      "Developed and maintained web applications using React.js, Node.js, MongoDB",
-      "Implemented responsive UIs and optimized application performance",
-      "Worked in cross-functional agile teams",
+      "Modernized a cloud-based security analytics platform using Java, Docker, Azure, and Apache NiFi, improving stability and dataflow reliability across ingestion and monitoring workloads.",
+      "Built an LLM-powered network intrusion detection module (Python, embeddings, anomaly detection) that strengthened detection quality in distributed data pipelines.",
+      "Optimized containerized microservices to reduce resource consumption and improve runtime efficiency in Azure-based environments.",
+      "Improved microservice build consistency by restructuring Dockerfile stages and ensuring reproducible container environments across Azure deployments.",
     ],
   },
   {
     title: "Graduate Research Assistant",
+    company: "Ludwig Maximilian University (LMU)",
+    location: "Munich, Germany",
+    period: "10/2023 – 06/2024",
+    items: [
+      "Processed large-scale brain MRI neuroimaging datasets using ML and statistical modeling to classify disease presence and subtype patterns.",
+      "Parallelized preprocessing and processing pipelines on HPC clusters, significantly accelerating feature extraction and model execution workloads.",
+      "Improved research workflow reliability by automating ETL steps, standardizing feature extraction, and optimizing job scheduling.",
+    ],
+  },
+  {
+    title: "Software Engineer (Working Student)",
+    company: "Aimyca GmbH",
+    location: "Munich, Germany",
+    period: "03/2022 – 03/2023",
+    items: [
+      "Delivered full-stack features using Python, Node.js, React, Vue, TypeScript, and REST APIs in an agile SaaS environment.",
+      "Built user-centric interfaces with clean component architectures and optimized interaction flows.",
+      "Developed Docker-based CI/CD pipelines on GCP to stabilize deployments and improve system reliability.",
+      "Enhanced conversational AI features through LLM fine-tuning, improved prompt structures, and refined extraction logic.",
+      "Collaborated directly with founders on architecture, technical design, and product-level prioritization.",
+    ],
+  },
+  {
+    title: "Graduate Research Assistant / Software Engineer",
     company: "NETLAB, Boğaziçi University",
     location: "Istanbul, Turkey",
-    period: "Sep 2020 – Feb 2023",
+    period: "02/2020 – 12/2021",
     items: [
-      "Research in molecular communications and testbed development",
-      "Published 4 papers in international journals and conferences",
-      "Developed simulation tools for nano-scale communications",
+      "Implemented simulation algorithms and C++/Python testbeds for TÜBİTAK-funded molecular communication research, improving experiment reproducibility.",
+      "Built embedded integrations with Raspberry Pi and Arduino, stabilizing hardware-based data acquisition pipelines.",
+    ],
+  },
+  {
+    title: "NLP / ML Intern",
+    company: "Idea Technology",
+    location: "Istanbul, Turkey",
+    period: "06/2019 – 07/2019",
+    items: [
+      "Developed NLP and ML components using Python, Pandas, and statistical modeling, building classification prototypes and exploratory pipelines to support model evaluation.",
+    ],
+  },
+  {
+    title: "Cybersecurity ML Intern",
+    company: "CTech Information Technologies",
+    location: "Istanbul, Turkey",
+    period: "01/2019 – 02/2019",
+    items: [
+      "Implemented deep learning-based attack classification models and improved preprocessing pipelines for cybersecurity datasets.",
+    ],
+  },
+  {
+    title: "Database Engineering Intern",
+    company: "VeriPark",
+    location: "Istanbul, Turkey",
+    period: "07/2018 – 09/2018",
+    items: [
+      "Developed and optimized SQL modules for CRM-oriented backend systems, improving data consistency and internal tooling workflows.",
     ],
   },
 ];

@@ -19,10 +19,10 @@ export default function About() {
           initial="hidden"
           animate={inView ? "show" : "hidden"}
         >
-          <motion.p variants={fadeUp} className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase">
+          <motion.p variants={fadeUp} className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">
             01 — About
           </motion.p>
-          <motion.h2 variants={fadeUp} className="text-3xl font-bold text-slate-100 mb-12">
+          <motion.h2 variants={fadeUp} className="text-3xl font-bold text-slate-100 mb-12 text-center">
             Who I am
           </motion.h2>
 

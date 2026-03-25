@@ -56,8 +56,8 @@ export default function CV() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase">03 — CV</p>
-          <h2 className="text-3xl font-bold text-slate-100 mb-8">Experience & Education</h2>
+          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">03 — CV</p>
+          <h2 className="text-3xl font-bold text-slate-100 mb-8 text-center">Experience & Education</h2>
         </motion.div>
 
         {/* Tabs */}
@@ -65,7 +65,7 @@ export default function CV() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="flex gap-1 p-1 glass rounded-xl w-fit mb-10"
+          className="flex gap-1 p-1 glass rounded-xl w-fit mb-10 mx-auto"
         >
           {["experience", "education"].map((t) => (
             <button
@@ -82,7 +82,7 @@ export default function CV() {
           ))}
         </motion.div>
 
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto">
           {list.map((item, i) => (
             <TimelineItem
               key={i}
@@ -98,7 +98,7 @@ export default function CV() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.6 }}
-          className="mt-8"
+          className="mt-8 max-w-2xl mx-auto"
         >
           <a
             href="/OguzhanYetimoglu_resume.pdf"

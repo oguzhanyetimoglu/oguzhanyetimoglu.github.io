@@ -27,8 +27,8 @@ export default function Projects() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase">02 — Projects</p>
-          <h2 className="text-3xl font-bold text-slate-100 mb-12">Things I've built</h2>
+          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">02 — Projects</p>
+          <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center">Things I've built</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-4">
