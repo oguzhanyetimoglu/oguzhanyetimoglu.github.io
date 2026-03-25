@@ -1,0 +1,214 @@
+{
+  "basics": {
+    "name": "Oğuzhan Yetimoğlu",
+    "label": "Full-Stack Software Engineer & Computer Science Student",
+    "image": "",
+    "email": "oguzhanyetimoglu@gmail.com",
+    "phone": "+49-15731621114",
+    "summary": "Full-Stack Software Engineer and Master's student at Technical University of Munich, specializing in machine learning, software engineering, and molecular communications research.",
+    "location": {
+      "address": "Helene-Mayer-Ring",
+      "postalCode": "80809",
+      "city": "Munich",
+      "countryCode": "DE",
+      "region": "Bavaria"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "oguzhan-yetimoglu",
+        "url": "https://linkedin.com/in/oguzhan-yetimoglu"
+      },
+      {
+        "network": "GitHub",
+        "username": "oguzhanyetimoglu",
+        "url": "https://github.com/oguzhanyetimoglu"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Siemens",
+      "position": "Working Student - Software Engineer",
+      "url": "https://siemens.com",
+      "startDate": "2024-06-01",
+      "endDate": "",
+      "summary": "Maintain and enhance security monitoring and analytics software using Java, Docker, Azure Cloud, and Apache NiFi. Develop LLM-based anomaly detection systems and implement DevOps processes.",
+      "highlights": [
+        "Developed LLM-based anomaly detection system for security threats",
+        "Implemented CI/CD pipelines and containerization",
+        "Enhanced security monitoring software with real-time processing"
+      ]
+    },
+    {
+      "name": "Ludwig Maximilian University (LMU)",
+      "position": "Research & Teaching Assistant",
+      "url": "https://lmu.de",
+      "startDate": "2024-04-01",
+      "endDate": "2024-05-31",
+      "summary": "Conduct research in molecular communications and nano-networks while assisting in undergraduate teaching.",
+      "highlights": [
+        "Research in molecular communications and nano-networks",
+        "Teaching assistance for computer science courses",
+        "Academic publication collaboration"
+      ]
+    },
+    {
+      "name": "Aimyca GmbH",
+      "position": "Full-Stack Software Engineer",
+      "url": "https://aimyca.com",
+      "startDate": "2023-03-01",
+      "endDate": "2024-03-01",
+      "summary": "Developed and maintained web applications using React.js, Node.js, and MongoDB in an agile development environment.",
+      "highlights": [
+        "Developed responsive web applications with React.js and Node.js",
+        "Optimized application performance and user experience",
+        "Collaborated in cross-functional agile teams"
+      ]
+    },
+    {
+      "name": "NETLAB, Boğaziçi University",
+      "position": "Graduate Research Assistant",
+      "url": "https://netlab.boun.edu.tr",
+      "startDate": "2020-09-01",
+      "endDate": "2023-02-01",
+      "summary": "Conducted research in molecular communications and published 4 papers in international journals and conferences.",
+      "highlights": [
+        "Published 4 research papers in international venues",
+        "Developed testbed systems for molecular communications",
+        "Created simulation tools for nano-scale communications"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Munich (TUM)",
+      "url": "https://tum.de",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2023-10-01",
+      "endDate": "",
+      "score": "",
+      "courses": ["Cybersecurity", "Large Language Models (LLMs)", "Software Architecture", "Distributed Systems"]
+    },
+    {
+      "institution": "Boğaziçi University",
+      "url": "https://boun.edu.tr",
+      "area": "Computer Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2020-09-01",
+      "endDate": "2023-02-01",
+      "score": "",
+      "courses": ["Molecular Communications", "Signal Processing", "Research Methodology"]
+    },
+    {
+      "institution": "Boğaziçi University",
+      "url": "https://boun.edu.tr",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2015-09-01",
+      "endDate": "2020-06-01",
+      "score": "",
+      "courses": ["Data Structures and Algorithms", "Software Engineering", "Database Systems", "Computer Networks"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C#", "SQL"]
+    },
+    {
+      "name": "Web Technologies",
+      "level": "Advanced",
+      "keywords": ["React.js", "Node.js", "HTML5", "CSS3", "RESTful APIs"]
+    },
+    {
+      "name": "Databases & Tools",
+      "level": "Intermediate",
+      "keywords": ["MongoDB", "PostgreSQL", "Docker", "Git", "Azure Cloud", "Apache NiFi"]
+    },
+    {
+      "name": "Machine Learning & AI",
+      "level": "Intermediate",
+      "keywords": ["TensorFlow", "PyTorch", "Scikit-learn", "Large Language Models (LLMs)"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Turkish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent (C1)"
+    },
+    {
+      "language": "German",
+      "fluency": "PreIntermediate (A2)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "FinK Analytica",
+      "description": "Comprehensive financial analysis platform for investment insights",
+      "highlights": ["Financial data analysis", "Investment portfolio management", "Real-time market insights"],
+      "keywords": ["Finance", "Analytics", "Investment"],
+      "type": "application",
+      "url": "/projects/1_fink_analytica/"
+    },
+    {
+      "name": "Elysio.ai",
+      "description": "AI-powered fashion application with recommendation system",
+      "highlights": ["AI-powered recommendations", "Fashion trend analysis", "User preference learning"],
+      "keywords": ["AI", "Fashion", "Machine Learning"],
+      "type": "application",
+      "url": "/projects/2_elysio_ai/"
+    },
+    {
+      "name": "Nanosim",
+      "description": "High-performance GPU-accelerated molecular simulation library",
+      "highlights": ["GPU acceleration", "Molecular dynamics simulation", "High-performance computing"],
+      "keywords": ["GPU", "Simulation", "HPC"],
+      "type": "library",
+      "url": "/projects/3_nanosim/"
+    },
+    {
+      "name": "TempoCraft",
+      "description": "Spotify BPM Playlist Creator for workout and mood-based music discovery",
+      "highlights": ["Spotify API integration", "BPM-based playlist generation", "User-friendly interface"],
+      "type": "application",
+      "url": "/projects/4_tempocraft/"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Multiple transmitter localization via single receiver in 3-D molecular communication via diffusion",
+      "publisher": "Digital Signal Processing",
+      "releaseDate": "2022",
+      "url": "https://doi.org/10.1016/j.dsp.2021.103185",
+      "summary": "A novel approach for localizing multiple transmitters in molecular communication systems using machine learning techniques."
+    },
+    {
+      "name": "A Microfluidic Platform for Modeling Molecular Communication",
+      "publisher": "International Balkan Conference on Communications and Networking (BalkanCom)",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1109/BalkanCom58402.2023.10167928",
+      "summary": "Development of a microfluidic platform for precise modeling of molecular communication systems."
+    },
+    {
+      "name": "A Mock Circulatory Network Testbed for Molecular Communications",
+      "publisher": "Signal Processing and Communications Applications Conference (SIU)",
+      "releaseDate": "2021",
+      "url": "https://doi.org/10.1109/SIU53274.2021.9478034",
+      "summary": "Design and implementation of a circulatory network testbed for molecular communication research."
+    },
+    {
+      "name": "Underwater Testbed for Molecular Communication",
+      "publisher": "Signal Processing and Communications Applications Conference (SIU)",
+      "releaseDate": "2021",
+      "url": "https://doi.org/10.1109/SIU53274.2021.9477896",
+      "summary": "Development of an underwater experimental setup for molecular communication studies."
+    }
+  ]
+}
