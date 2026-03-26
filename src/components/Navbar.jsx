@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const links = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "CV", href: "#cv" },
-  { label: "Publications", href: "#publications" },
+  { label: "Background", href: "#background" },
+  { label: "Research", href: "#research" },
 ];
 
 export default function Navbar() {
@@ -19,6 +19,35 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const options = { rootMargin: "-50% 0px -50% 0px", threshold: 0 };
+
+    const heroEl = document.getElementById("hero");
+    const heroObs = heroEl
+      ? new IntersectionObserver(
+          ([entry]) => { if (entry.isIntersecting) setActive(""); },
+          options
+        )
+      : null;
+    heroObs?.observe(heroEl);
+
+    const ids = links.map((l) => l.href.replace("#", ""));
+    const observers = ids.map((id) => {
+      const el = document.getElementById(id);
+      if (!el) return null;
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActive(`#${id}`); },
+        options
+      );
+      obs.observe(el);
+      return obs;
+    });
+    return () => {
+      heroObs?.disconnect();
+      observers.forEach((obs) => obs?.disconnect());
+    };
+  }, []);
+
   const handleClick = (href) => {
     setActive(href);
     setMenuOpen(false);
@@ -30,7 +59,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass border-b border-white/5 shadow-xl shadow-black/20" : ""
+        scrolled ? "bg-[#030712]/80 backdrop-blur-md shadow-[0_1px_0_0_rgba(255,255,255,0.05),0_4px_24px_0_rgba(0,0,0,0.4)]" : ""
       }`}
     >
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">

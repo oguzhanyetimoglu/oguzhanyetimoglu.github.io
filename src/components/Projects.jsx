@@ -1,12 +1,24 @@
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { projects } from "../data";
+import ModalShell from "../modals/ModalShell";
+import FinKAnalyticaModal from "../modals/projects/FinKAnalytica";
+import ElysioModal from "../modals/projects/Elysio";
+import NanosimModal from "../modals/projects/Nanosim";
+import TempoCraftModal from "../modals/projects/TempoCraft";
 
 const categoryColor = {
   work: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
   school: "text-amber-400 bg-amber-500/10 border-amber-500/20",
   research: "text-violet-400 bg-violet-500/10 border-violet-500/20",
   fun: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+};
+
+const modalMap = {
+  "FinK Analytica": FinKAnalyticaModal,
+  "Elysio.ai": ElysioModal,
+  Nanosim: NanosimModal,
+  TempoCraft: TempoCraftModal,
 };
 
 const GitHubIcon = () => (
@@ -18,73 +30,93 @@ const GitHubIcon = () => (
 export default function Projects() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const [selected, setSelected] = useState(null);
+
+  const ModalContent = selected ? modalMap[selected.title] : null;
 
   return (
-    <section id="projects" ref={ref} className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-        >
-          <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">02 — Projects</p>
-          <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center">Things I've built</h2>
-        </motion.div>
+    <>
+      <section id="projects" ref={ref} className="py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">02 — Projects</p>
+            <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center">Things I've built</h2>
+          </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          {projects.map((project, i) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 24 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass glass-hover rounded-xl p-6 flex flex-col group"
-            >
-              <div className="flex items-start justify-between mb-3">
-                <span className={`text-xs font-mono px-2 py-0.5 rounded border ${categoryColor[project.category]}`}>
-                  {project.category}
-                </span>
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-500 hover:text-slate-300 transition-colors"
-                    aria-label="GitHub"
-                  >
-                    <GitHubIcon />
-                  </a>
-                )}
-              </div>
-
-              <h3 className="text-slate-100 font-semibold text-lg mb-2 group-hover:text-cyan-400 transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">
-                {project.description}
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex flex-wrap gap-1.5">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="tag">
-                      {tag}
+          <div className="grid md:grid-cols-2 gap-4">
+            {projects.map((project, i) => (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, y: 24 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="glass glass-hover rounded-xl p-6 flex flex-col group cursor-pointer"
+                onClick={() => setSelected(project)}
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className={`text-xs font-mono px-2 py-0.5 rounded border ${categoryColor[project.category]}`}>
+                      {project.category}
                     </span>
-                  ))}
+                    <span className="text-xs font-mono text-slate-600">{project.year}</span>
+                  </div>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-500 hover:text-slate-300 transition-colors"
+                      aria-label="GitHub"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <GitHubIcon />
+                    </a>
+                  )}
                 </div>
-                <ul className="space-y-1">
-                  {project.highlights.map((h) => (
-                    <li key={h} className="text-xs text-slate-500 flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-cyan-500/50 shrink-0" />
-                      {h}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
+
+                <h3 className="text-slate-100 font-semibold text-lg mb-2 group-hover:text-cyan-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">{project.description}</p>
+
+                <div className="space-y-3">
+                  <div className="flex flex-wrap gap-1.5">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <ul className="space-y-1">
+                    {project.highlights.map((h) => (
+                      <li key={h} className="text-xs text-slate-500 flex items-center gap-2">
+                        <span className="w-1 h-1 rounded-full bg-cyan-500/50 shrink-0" />
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="mt-4 text-xs font-mono text-cyan-500/50 group-hover:text-cyan-400/70 transition-colors">
+                  click to explore →
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <AnimatePresence>
+        {selected && ModalContent && (
+          <ModalShell onClose={() => setSelected(null)}>
+            <ModalContent />
+          </ModalShell>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

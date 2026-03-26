@@ -1,7 +1,7 @@
 export const profile = {
   name: "Oğuzhan Yetimoğlu",
   title: "Software Engineer · M.Sc. CS @ TUM",
-  subtitle: "Building systems that are practical, stable, and actually get used.",
+  subtitle: "I build software end to end — from UI to model to deployment.",
   bio: "Hey! I'm Oğuzhan, a software engineer based in Munich. I recently completed my Master's degree at the Technical University of Munich (TUM), where I also worked part-time at Siemens contributing to cybersecurity monitoring tools. Most of my background is in software engineering, especially fullstack development.\n\nDuring my master's, I explored the cybersecurity space more actively — my thesis focused on applying large language models to detect anomalies in network traffic.\n\nOutside of work, I'm into running and working out. Whether it's in code or daily life, I enjoy breaking down complex systems and finding patterns that make them work better.",
   location: "Munich, Germany",
   email: "oguzhanyetimoglu@gmail.com",
@@ -24,34 +24,38 @@ export const skills = [
 
 export const projects = [
   {
+    title: "TempoCraft",
+    year: 2025,
+    description: "A Python CLI tool that connects to your Spotify account, analyzes your top tracks for BPM and genre using a multi-source fallback pipeline, and automatically creates filtered playlists.",
+    tags: ["Python", "Spotipy", "OAuth2 / PKCE", "AcousticBrainz"],
+    category: "fun",
+    github: "https://github.com/oguzhanyetimoglu/tempo-craft",
+    highlights: ["3-tier BPM fallback pipeline", "Fuzzy title matching", "No backend required"],
+  },
+  {
     title: "FinK Analytica",
-    description: "Financial data analysis platform built as an interdisciplinary project for a tech company — enables algorithmic NLP-based comparison of financial documents.",
-    tags: ["Vue.js", "TypeScript", "Django", "PostgreSQL", "NLP"],
+    year: 2024,
+    description: "A containerized web app that lets analysts search and cluster thousands of SEC 10-K filings using TF-IDF, Word2Vec, or BERT embeddings — built as a team project at TU Munich.",
+    tags: ["Nuxt.js", "Django", "PostgreSQL", "scikit-learn", "sentence-transformers"],
     category: "school",
     github: "https://github.com/oguzhanyetimoglu/algorithmic-textual-comparison-app",
-    highlights: ["Interdisciplinary project course", "NLP integration", "Multi-user RBAC"],
+    highlights: ["3 embedding strategies", "K-Means & Agglomerative clustering", "10K SEC filings dataset"],
   },
   {
     title: "Elysio.ai",
-    description: "AI-powered fashion app that empowers influencers to create and customize digital replicas.",
-    tags: ["React.js", "FastAPI", "ML", "Material UI"],
+    year: 2023,
+    description: "A platform for fashion brands to produce photo-realistic campaign imagery without a shoot — by building AI replicas of models and dressing them in any garment, on demand.",
+    tags: ["React", "FastAPI", "AWS", "Replicate", "Diffusion Models"],
     category: "work",
-    highlights: ["MVP delivery", "AI/ML pipeline", "Agile sprints"],
+    highlights: ["AI-generated model replicas", "Prompt-driven photo editing", "Lead engineer end-to-end"],
   },
   {
     title: "Nanosim",
-    description: "High-performance GPU-accelerated molecular communication simulation library used in multiple research institutions worldwide.",
-    tags: ["Python", "CUDA", "HPC", "Research"],
+    year: 2020,
+    description: "A research simulation tool for modeling how nanoparticles move and interact in biological environments, built to study molecular communication at scale using GPU acceleration.",
+    tags: ["C++", "CUDA", "Python", "matplotlib"],
     category: "research",
-    highlights: ["CUDA acceleration", "3D simulation", "Published research"],
-  },
-  {
-    title: "TempoCraft",
-    description: "Spotify playlist creator that filters and generates playlists based on BPM — perfect for workouts, runs, or any activity where tempo matters.",
-    tags: ["Python", "Spotify API", "OAuth 2.0"],
-    category: "fun",
-    github: "https://github.com/oguzhanyetimoglu/tempo-craft",
-    highlights: ["BPM-based filtering", "Auto playlist generation", "Spotify OAuth"],
+    highlights: ["Hundreds of thousands of particles", "3D visualization", "Academic research tool"],
   },
 ];
 
@@ -98,7 +102,7 @@ export const experience = [
     location: "Istanbul, Turkey",
     period: "02/2020 – 12/2021",
     items: [
-      "Implemented simulation algorithms and C++/Python testbeds for TÜBİTAK-funded molecular communication research, improving experiment reproducibility.",
+      "Implemented simulation algorithms and C++/Python testbeds for TÜBİTAK (The Scientific and Technological Research Council of Turkey)-funded molecular communication research, improving experiment reproducibility.",
       "Built embedded integrations with Raspberry Pi and Arduino, stabilizing hardware-based data acquisition pipelines.",
     ],
   },
@@ -133,25 +137,25 @@ export const experience = [
 
 export const education = [
   {
-    degree: "M.Sc. Computer Science",
+    degree: "M.Sc. Informatics",
     school: "Technical University of Munich (TUM)",
     location: "Munich, Germany",
-    period: "2023 – Sep 2025",
-    items: ["Focus: ML, Software Engineering, Distributed Systems", "Thesis: LLM-based anomaly detection in network traffic"],
+    period: "09/2023 – 09/2025",
+    items: ["Focus: ML & LLMs · Software Engineering · Cybersecurity", "Thesis: AI-Powered Security: Leveraging Large Language Models for Network Anomaly-based Detection", "Grade: 1.6 / 1.0 best"],
   },
   {
     degree: "M.Sc. Computer Engineering",
     school: "Boğaziçi University",
     location: "Istanbul, Turkey",
-    period: "2020 – 2023",
-    items: ["Research: Molecular Communications & Signal Processing", "Published 4 international papers"],
+    period: "09/2019 – 09/2022",
+    items: ["Research: Molecular Communications & Signal Processing", "Thesis: Source Localization for Molecular Communication via Diffusion", "Published 4 international papers", "Grade: 4.0 / 4.0"],
   },
   {
     degree: "B.Sc. Computer Engineering",
     school: "Boğaziçi University",
     location: "Istanbul, Turkey",
-    period: "2015 – 2020",
-    items: ["Algorithms, data structures, software development"],
+    period: "09/2014 – 07/2019",
+    items: ["Algorithms, data structures, software development", "Grade: 2.8 / 4.0"],
   },
 ];
 

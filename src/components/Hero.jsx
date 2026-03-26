@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { profile } from "../data";
+import ResumeModal from "../modals/ResumeModal";
 
 const socialIcons = {
   github: (
@@ -30,8 +32,10 @@ const item = {
 };
 
 export default function Hero() {
+  const [resumeOpen, setResumeOpen] = useState(false);
+
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] rounded-full bg-violet-500/5 blur-[100px] pointer-events-none" />
@@ -72,18 +76,26 @@ export default function Hero() {
         </motion.p>
 
         <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="#projects"
+          <button
+            onClick={() => {
+              const el = document.getElementById("about");
+              if (!el) return;
+              el.scrollIntoView({ behavior: "smooth" });
+              setTimeout(() => {
+                el.classList.add("section-highlight");
+                el.addEventListener("animationend", () => el.classList.remove("section-highlight"), { once: true });
+              }, 600);
+            }}
             className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-semibold text-sm transition-all duration-200 hover:shadow-lg hover:shadow-cyan-500/25"
           >
-            View Projects
-          </a>
-          <a
-            href="#cv"
+            Explore
+          </button>
+          <button
+            onClick={() => setResumeOpen(true)}
             className="px-5 py-2.5 rounded-lg glass hover:bg-white/8 border border-white/10 hover:border-cyan-500/30 text-slate-300 text-sm font-medium transition-all duration-200"
           >
             Resume
-          </a>
+          </button>
         </motion.div>
 
         <motion.div variants={item} className="flex items-center justify-center gap-4 mt-10">
@@ -116,6 +128,8 @@ export default function Hero() {
           </a>
         </motion.div>
       </motion.div>
+
+      {resumeOpen && <ResumeModal onClose={() => setResumeOpen(false)} />}
 
       {/* Scroll hint */}
       <motion.div

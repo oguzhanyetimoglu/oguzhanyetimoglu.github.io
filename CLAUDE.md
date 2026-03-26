@@ -4,90 +4,51 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll-based academic portfolio website using the [al-folio](https://github.com/alshedivat/al-folio) theme, deployed to GitHub Pages at `https://oguzhanyetimoglu.github.io`.
+Personal portfolio website for Oğuzhan Yetimoğlu, built with React + Vite + Tailwind CSS, deployed to GitHub Pages at `https://oguzhanyetimoglu.github.io`.
 
 ## Common Commands
 
 ```bash
 # Install dependencies
-bundle install
 npm install
 
-# Build the site
-bundle exec jekyll build
+# Local development with HMR
+npm run dev
 
-# Local development (serve with live reload)
-bundle exec jekyll serve
+# Production build (outputs to dist/)
+npm run build
 
-# Format code
-npx prettier --write .
+# Preview production build locally
+npm run preview
 
-# Check formatting without writing
-npx prettier --check .
-
-# Run pre-commit hooks on all files
-pre-commit run --all-files
-```
-
-**Manual deployment** (builds and pushes to `gh-pages` branch):
-```bash
-./bin/deploy
+# Lint
+npm run lint
 ```
 
 ## Architecture
 
-### Content Collections
+This is a **single-page app** — no routing, all sections render on one page in `App.jsx`.
 
-Content lives in these directories — each is a Jekyll collection:
+### Key Directories
 
-- `_pages/` — Static pages (about, CV, projects, blog index, etc.)
-- `_posts/` — Blog posts (filename format: `YYYY-MM-DD-title.md`)
-- `_projects/` — Portfolio project cards
-- `_news/` — Short news/announcement items
-- `_books/` — Book collection
-- `_bibliography/` — BibTeX files for publications (used by jekyll-scholar)
+- `src/components/` — One file per section: `Hero`, `About`, `Projects`, `CV`, `Publications`, `Navbar`, `Footer`. Also `index.js` re-exports all.
+- `src/data/index.js` — **Single source of truth for all content.** All profile info, skills, work experience, projects, and publications live here as exported JS objects. To update content, edit only this file.
+- `src/assets/` — Static assets (hero image, etc.)
+- `assets/img/` — Project/public images
+- `public/` — Static files served at root (e.g. resume PDF)
 
-### Layouts and Templates
+### Data Flow
 
-- `_layouts/` — Full page templates (post, page, home, distill, etc.)
-- `_includes/` — Reusable Liquid partials, including `cv/`, `repository/`, and `resume/` subdirectories
-- `_sass/` — SCSS stylesheets
+Components import directly from `src/data/index.js`. There is no CMS, API, or build-time data fetching — it's all static JS imports.
 
-### Data and Configuration
+### Styling
 
-- `_config.yml` — Master config: site metadata, theme settings, plugin options, third-party CDN references with integrity hashes
-- `_data/` — YAML data files (CV sections, repository lists)
-- `assets/json/resume.json` — JSON Resume format, loaded by jekyll-get-json for the CV page
+Tailwind CSS with custom fonts configured in `tailwind.config.js`:
+- `font-sans` → Inter
+- `font-mono` → JetBrains Mono
 
-### Build Pipeline
+Dark theme: background is `#030712` (near-black). Animations use `framer-motion`.
 
-Deployment (via `.github/workflows/deploy.yml`) runs:
-1. `bundle exec jekyll build` with `JEKYLL_ENV=production`
-2. `purgecss -c purgecss.config.js` to strip unused CSS
+### Deployment
 
-The site uses many Jekyll plugins (see `Gemfile`), notable ones:
-- `jekyll-scholar` — Bibliography/publications from BibTeX
-- `jekyll-imagemagick` — Responsive image generation
-- `jekyll-minifier` / `jekyll-terser` — HTML/CSS/JS minification in production
-- `jekyll-jupyter-notebook` — Renders `.ipynb` files as posts
-
-### Front Matter Conventions
-
-Pages/posts use YAML front matter. Key fields:
-- `layout:` — matches a file in `_layouts/`
-- `title:`, `description:` — displayed and used for SEO
-- `nav: true` / `nav_order:` — controls navbar inclusion and order
-- `tabs: true` — enables tabbed content
-- `toc:` — enables table of contents sidebar
-
-For projects: `img:`, `importance:`, `category:` control display in the projects grid.
-
-For posts: `tags:`, `categories:` affect filtering and archive URLs.
-
-## Code Formatting
-
-Prettier is configured (`.prettierrc`) with:
-- Print width: 150
-- `@shopify/prettier-plugin-liquid` for `.liquid` / `.html` files
-
-Pre-commit hooks (`.pre-commit-config.yaml`) check trailing whitespace, file endings, YAML validity, and large files. These run automatically on `git commit`.
+The site builds to `dist/` via `npm run build`. GitHub Actions or manual deployment pushes this to GitHub Pages. The `vite.config.js` sets `base: "/"`.
