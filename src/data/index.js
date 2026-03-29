@@ -24,6 +24,15 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Instinct Dark Info",
+    year: 2026,
+    description: "A custom watch face for the Garmin Instinct 2, built from scratch in Monkey C. Features real-time heart rate, weather, GPS-based sunrise/sunset, and a 24-hour day/night timeline bar. Published on the Garmin Connect IQ Store.",
+    tags: ["Monkey C", "Garmin Connect IQ SDK", "Toybox API", "Embedded"],
+    category: "fun",
+    github: "https://github.com/oguzhanyetimoglu/Instinct2WatchFace",
+    highlights: ["Published on Garmin Connect IQ Store", "Per-second update via onPartialUpdate", "GPS-based dynamic sunrise/sunset"],
+  },
+  {
     title: "TempoCraft",
     year: 2025,
     description: "A Python CLI tool that connects to your Spotify account, analyzes your top tracks for BPM and genre using a multi-source fallback pipeline, and automatically creates filtered playlists.",
