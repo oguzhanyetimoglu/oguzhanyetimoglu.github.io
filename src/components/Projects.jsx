@@ -6,7 +6,7 @@ import FinKAnalyticaModal from "../modals/projects/FinKAnalytica";
 import ElysioModal from "../modals/projects/Elysio";
 import NanosimModal from "../modals/projects/Nanosim";
 import TempoCraftModal from "../modals/projects/TempoCraft";
-import InstinctDarkInfoModal from "../modals/projects/InstinctDarkInfo";
+import NoxInfoWatchfaceModal from "../modals/projects/NoxInfoWatchface";
 
 const categoryColor = {
   work: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
@@ -16,7 +16,7 @@ const categoryColor = {
 };
 
 const modalMap = {
-  "Instinct Dark Info": InstinctDarkInfoModal,
+  "Instinct 2 Watchface - Nox Info": NoxInfoWatchfaceModal,
   "FinK Analytica": FinKAnalyticaModal,
   "Elysio.ai": ElysioModal,
   Nanosim: NanosimModal,

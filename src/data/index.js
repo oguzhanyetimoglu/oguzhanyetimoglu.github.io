@@ -24,12 +24,12 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Instinct Dark Info",
+    title: "Instinct 2 Watchface - Nox Info",
     year: 2026,
     description: "A custom watch face for the Garmin Instinct 2, built from scratch in Monkey C. Features real-time heart rate, weather, GPS-based sunrise/sunset, and a 24-hour day/night timeline bar. Published on the Garmin Connect IQ Store.",
     tags: ["Monkey C", "Garmin Connect IQ SDK", "Toybox API", "Embedded"],
     category: "fun",
-    github: "https://github.com/oguzhanyetimoglu/Instinct2WatchFace",
+    github: "https://github.com/oguzhanyetimoglu/nox-info-watchface",
     highlights: ["Published on Garmin Connect IQ Store", "Per-second update via onPartialUpdate", "GPS-based dynamic sunrise/sunset"],
   },
   {

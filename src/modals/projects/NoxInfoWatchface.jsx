@@ -7,7 +7,7 @@ const GitHubIcon = () => (
   </svg>
 );
 
-export default function InstinctDarkInfoModal() {
+export default function NoxInfoWatchfaceModal() {
   return (
     <>
       <div className="w-full h-52 overflow-hidden bg-[#0a1120]">
@@ -21,11 +21,11 @@ export default function InstinctDarkInfoModal() {
               <span className="text-xs font-mono px-2 py-0.5 rounded border text-emerald-400 bg-emerald-500/10 border-emerald-500/20">fun</span>
               <span className="text-xs font-mono text-slate-600">2026</span>
             </div>
-            <h2 className="text-2xl font-bold text-slate-100">Instinct Dark Info</h2>
+            <h2 className="text-2xl font-bold text-slate-100">Instinct 2 Watchface - Nox Info</h2>
             <p className="text-sm text-slate-500 font-mono mt-1">Garmin Watch Face · Monkey C · Solo Developer</p>
           </div>
           <a
-            href="https://github.com/oguzhanyetimoglu/Instinct2WatchFace"
+            href="https://github.com/oguzhanyetimoglu/nox-info-watchface"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 flex items-center gap-2 px-4 py-2 glass rounded-lg text-slate-400 hover:text-slate-200 hover:border-cyan-500/30 transition-all"
