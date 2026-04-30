@@ -24,15 +24,30 @@ export default function NoxInfoWatchfaceModal() {
             <h2 className="text-2xl font-bold text-slate-100">Instinct 2 Watchface - Nox Info</h2>
             <p className="text-sm text-slate-500 font-mono mt-1">Garmin Watch Face · Monkey C · Solo Developer</p>
           </div>
-          <a
-            href="https://github.com/oguzhanyetimoglu/nox-info-watchface"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 flex items-center gap-2 px-4 py-2 glass rounded-lg text-slate-400 hover:text-slate-200 hover:border-cyan-500/30 transition-all"
-          >
-            <GitHubIcon />
-            <span className="font-mono text-xs">GitHub</span>
-          </a>
+          <div className="shrink-0 flex flex-col gap-2">
+            <a
+              href="https://apps.garmin.com/en-US/apps/1b2667b1-18a4-49db-b133-b6b3b2a1dd58"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 glass rounded-lg text-slate-400 hover:text-slate-200 hover:border-emerald-500/30 transition-all"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
+              <span className="font-mono text-xs">Connect IQ Store</span>
+            </a>
+            <a
+              href="https://github.com/oguzhanyetimoglu/nox-info-watchface"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 glass rounded-lg text-slate-400 hover:text-slate-200 hover:border-cyan-500/30 transition-all"
+            >
+              <GitHubIcon />
+              <span className="font-mono text-xs">GitHub</span>
+            </a>
+          </div>
         </div>
 
         <p className="text-slate-300 text-sm leading-relaxed border-l-2 border-emerald-500/30 pl-4">

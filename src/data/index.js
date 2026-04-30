@@ -30,6 +30,7 @@ export const projects = [
     tags: ["Monkey C", "Garmin Connect IQ SDK", "Toybox API", "Embedded"],
     category: "fun",
     github: "https://github.com/oguzhanyetimoglu/nox-info-watchface",
+    store: "https://apps.garmin.com/en-US/apps/1b2667b1-18a4-49db-b133-b6b3b2a1dd58",
     highlights: ["Published on Garmin Connect IQ Store", "Per-second update via onPartialUpdate", "GPS-based dynamic sunrise/sunset"],
   },
   {
