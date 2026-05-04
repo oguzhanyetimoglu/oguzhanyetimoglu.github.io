@@ -24,6 +24,22 @@ export const skills = [
 
 export const projects = [
   {
+    title: "LoreMaster",
+    year: 2026,
+    description: "Multi-realm fantasy/sci-fi lore quiz. A solo, end-to-end production app: Android (Expo), Next.js admin panel, static marketing site, and a Firebase backend, all in one TypeScript monorepo.",
+    tags: ["TypeScript", "React Native", "Next.js", "Firebase", "Cloud Functions", "Expo"],
+    category: "fun",
+    highlights: ["Solo from design to deployment: mobile, admin, cloud functions, marketing", "Server-authoritative scoring with idempotent writes", "Async 1v1 duels (StreakDuel + RealmCrown)"],
+  },
+  {
+    title: "quiz-forge",
+    year: 2026,
+    description: "A free-tier RAG pipeline that turns Fandom wiki pages into ~200K validated trivia questions. Cross-family validation, source-grounded substring guarantees, fully resumable. Built to feed the LoreMaster question bank.",
+    tags: ["Python", "RAG", "LiteLLM", "ChromaDB", "SQLite", "Pydantic"],
+    category: "fun",
+    highlights: ["Free-tier only: zero paid models, end to end", "Cross-family validator discipline", "Source-grounded substring guarantee", "Resumable at every stage"],
+  },
+  {
     title: "Instinct 2 Watchface - Nox Info",
     year: 2026,
     description: "A custom watch face for the Garmin Instinct 2, built from scratch in Monkey C. Features real-time heart rate, weather, GPS-based sunrise/sunset, and a 24-hour day/night timeline bar. Published on the Garmin Connect IQ Store.",

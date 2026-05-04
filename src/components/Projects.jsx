@@ -7,6 +7,8 @@ import ElysioModal from "../modals/projects/Elysio";
 import NanosimModal from "../modals/projects/Nanosim";
 import TempoCraftModal from "../modals/projects/TempoCraft";
 import NoxInfoWatchfaceModal from "../modals/projects/NoxInfoWatchface";
+import LoreMasterModal from "../modals/projects/LoreMaster";
+import QuizForgeModal from "../modals/projects/QuizForge";
 
 const categoryColor = {
   work: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
@@ -16,6 +18,8 @@ const categoryColor = {
 };
 
 const modalMap = {
+  LoreMaster: LoreMasterModal,
+  "quiz-forge": QuizForgeModal,
   "Instinct 2 Watchface - Nox Info": NoxInfoWatchfaceModal,
   "FinK Analytica": FinKAnalyticaModal,
   "Elysio.ai": ElysioModal,
