@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -5,8 +6,12 @@ import Projects from "./components/Projects";
 import CV from "./components/CV";
 import Publications from "./components/Publications";
 import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
+import { useClarityConsent } from "./hooks/useClarity";
 
 export default function App() {
+  const [consent, setConsent] = useClarityConsent();
+
   return (
     <div className="min-h-screen bg-[#030712]">
       <Navbar />
@@ -30,6 +35,15 @@ export default function App() {
         <Publications />
       </main>
       <Footer />
+      <AnimatePresence>
+        {consent === null && (
+          <CookieBanner
+            key="cookie-banner"
+            onAccept={() => setConsent("accepted")}
+            onDecline={() => setConsent("declined")}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

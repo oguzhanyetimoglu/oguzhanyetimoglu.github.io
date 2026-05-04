@@ -1,4 +1,5 @@
 import { profile } from "../data";
+import { resetClarityConsent } from "../hooks/useClarity";
 
 export default function Footer() {
   return (
@@ -17,6 +18,9 @@ export default function Footer() {
           <a href={`mailto:${profile.email}`} className="text-slate-600 hover:text-slate-400 text-xs font-mono transition-colors">
             Email
           </a>
+          <button onClick={resetClarityConsent} className="text-slate-600 hover:text-slate-400 text-xs font-mono transition-colors">
+            Cookie settings
+          </button>
         </div>
       </div>
     </footer>
