@@ -21,7 +21,7 @@ export default function UnderwaterTestbedModal() {
 
       <ModalSection label="Abstract">
         <p className="text-slate-400 text-sm leading-relaxed">
-          Conventional underwater communication paradigms — electromagnetic, optic, and sonar — face reliability issues and limited range due to propagation loss. Molecular communication is proposed as an alternative. This paper introduces a water channel testbed for molecular communications, consisting of a water channel, water tanks, a circulation pump, information molecules, a molecule emitter, molecule filters, a laser, high-resolution programmable cameras, chemical sensors, and a synchronization unit coordinating the camera, laser, and computer.
+          Conventional underwater communication paradigms (electromagnetic, optic, and sonar) face reliability issues and limited range due to propagation loss. Molecular communication is proposed as an alternative. This paper introduces a water channel testbed for molecular communications, consisting of a water channel, water tanks, a circulation pump, information molecules, a molecule emitter, molecule filters, a laser, high-resolution programmable cameras, chemical sensors, and a synchronization unit coordinating the camera, laser, and computer.
         </p>
       </ModalSection>
 

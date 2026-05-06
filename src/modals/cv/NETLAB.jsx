@@ -13,7 +13,7 @@ export default function NETLABModal() {
       <ModalSection label="Context">
         <div className="space-y-3">
           <p className="text-slate-400 text-sm leading-relaxed">
-            Worked across two research labs on TÜBİTAK-funded projects in molecular communication — a field studying how nanoscale devices can communicate using molecules rather than radio waves. Applications range from targeted drug delivery to bio-cyber interfaces.
+            Worked across two research labs on TÜBİTAK-funded projects in molecular communication, a field studying how nanoscale devices can communicate using molecules rather than radio waves. Applications range from targeted drug delivery to bio-cyber interfaces.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
             I built the simulation and hardware testbed infrastructure that supported the labs' experiments. This work directly led to the Nanosim library and contributed to four published papers.

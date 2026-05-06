@@ -36,12 +36,12 @@ export default function FinKAnalyticaModal() {
         </div>
 
         <p className="text-slate-300 text-sm leading-relaxed border-l-2 border-amber-500/30 pl-4">
-          A containerized web application that lets analysts search and cluster thousands of SEC 10-K filings using multiple NLP techniques — built as a team project at TU Munich.
+          A containerized web application that lets analysts search and cluster thousands of SEC 10-K filings using multiple NLP techniques, built as a team project at TU Munich.
         </p>
 
         <ModalSection label="What It Does">
           <p className="text-slate-400 text-sm leading-relaxed mb-3">
-            The platform ingests SEC 10-K annual report filings and lets users explore them in two main ways: semantic search — find filings most similar to a text query — and clustering — group documents by content and visualize them as an interactive scatter plot. There's also a full database management interface and admin user controls.
+            The platform ingests SEC 10-K annual report filings and lets users explore them in two main ways. Semantic search finds filings most similar to a text query. Clustering groups documents by content and visualizes them as an interactive scatter plot. There's also a full database management interface and admin user controls.
           </p>
         </ModalSection>
 
@@ -54,9 +54,9 @@ export default function FinKAnalyticaModal() {
               </p>
               <div className="space-y-2">
                 {[
-                  { label: "TF-IDF", desc: "Keyword frequency — fast and lightweight, good for straightforward lexical similarity." },
-                  { label: "Word2Vec", desc: "Trained on the filing corpus at query time — captures word relationships and works better across paraphrased content." },
-                  { label: "BERT", desc: "Deep contextual embeddings — the most semantically rich option, but significantly slower. Can use GPU acceleration." },
+                  { label: "TF-IDF", desc: "Keyword frequency: fast and lightweight, good for straightforward lexical similarity." },
+                  { label: "Word2Vec", desc: "Trained on the filing corpus at query time, captures word relationships and works better across paraphrased content." },
+                  { label: "BERT", desc: "Deep contextual embeddings, the most semantically rich option, but significantly slower. Can use GPU acceleration." },
                 ].map(({ label, desc }) => (
                   <div key={label} className="flex gap-3">
                     <span className="shrink-0 font-mono text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-1.5 py-0.5 rounded h-fit mt-0.5">{label}</span>
@@ -69,14 +69,14 @@ export default function FinKAnalyticaModal() {
             <div>
               <p className="text-slate-300 text-xs font-mono uppercase tracking-wider mb-1">Clustering & Visualization</p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                For clustering, filings are embedded, then compressed into two dimensions using PCA or t-SNE, then grouped using K-Means or Agglomerative Clustering. The result is an interactive scatter plot where each dot is a company, colored by cluster. Optional text preprocessing — stopword removal, stemming, lemmatization — can be toggled per request.
+                For clustering, filings are embedded, then compressed into two dimensions using PCA or t-SNE, then grouped using K-Means or Agglomerative Clustering. The result is an interactive scatter plot where each dot is a company, colored by cluster. Optional text preprocessing (stopword removal, stemming, lemmatization) can be toggled per request.
               </p>
             </div>
 
             <div>
               <p className="text-slate-300 text-xs font-mono uppercase tracking-wider mb-1">API Design</p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                SEC filings contain a lot of text — up to 15 numbered item fields per document. The API is designed so that list views never load the full text content unless explicitly asked, keeping responses fast. Dashboard stats are loaded in parallel with separate aggregate endpoints rather than computing them client-side.
+                SEC filings contain a lot of text, up to 15 numbered item fields per document. The API is designed so that list views never load the full text content unless explicitly asked, keeping responses fast. Dashboard stats are loaded in parallel with separate aggregate endpoints rather than computing them client-side.
               </p>
             </div>
           </div>
@@ -86,18 +86,18 @@ export default function FinKAnalyticaModal() {
           <BulletList
             color="bg-amber-400/60"
             items={[
-              "Three embedding strategies interchangeable at runtime — users pick the speed/accuracy tradeoff per query",
+              "Three embedding strategies interchangeable at runtime: users pick the speed/accuracy tradeoff per query",
               "API designed to avoid loading heavy text fields by default, keeping list responses lean",
-              "All ML parameters — embedding, clustering, dimensionality reduction, preprocessing — are independent and composable in a single request",
-              "10,000 real SEC filings bundled as a fixture — the platform is demo-ready immediately after startup",
-              "Started as a standalone NLP research module, then integrated into the production backend — clear prototype-to-production path",
+              "All ML parameters (embedding, clustering, dimensionality reduction, preprocessing) are independent and composable in a single request",
+              "10,000 real SEC filings bundled as a fixture: the platform is demo-ready immediately after startup",
+              "Started as a standalone NLP research module, then integrated into the production backend, clear prototype-to-production path",
             ]}
           />
         </ModalSection>
 
         <ModalSection label="Team">
           <p className="text-slate-400 text-sm">
-            Abdurrahman Dilmac, Berkay Kozan, Oğuzhan Yetimoğlu — equal contributions, developed at TU Munich.
+            Abdurrahman Dilmac, Berkay Kozan, Oğuzhan Yetimoğlu, equal contributions, developed at TU Munich.
           </p>
         </ModalSection>
 

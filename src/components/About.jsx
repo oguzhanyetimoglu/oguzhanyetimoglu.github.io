@@ -20,11 +20,20 @@ export default function About() {
           animate={inView ? "show" : "hidden"}
         >
           <motion.p variants={fadeUp} className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">
-            01 — About
+            01 · About
           </motion.p>
-          <motion.h2 variants={fadeUp} className="text-3xl font-bold text-slate-100 mb-12 text-center">
+          <motion.h2 variants={fadeUp} className="text-3xl font-bold text-slate-100 mb-2 text-center">
             Who I am
           </motion.h2>
+          <motion.p
+            variants={fadeUp}
+            className="text-center font-mono text-sm sm:text-base mb-12"
+          >
+            <span className="text-slate-300">Oğuzhan</span>
+            <span className="text-slate-500"> [oˈuːzhan] </span>
+            <span className="text-slate-600">·</span>
+            <span className="text-slate-400"> he/him</span>
+          </motion.p>
 
           <div className="grid md:grid-cols-2 gap-12">
             {/* Bio */}

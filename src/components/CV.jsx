@@ -86,7 +86,7 @@ export default function CV() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">03 — Background</p>
+            <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">03 · Background</p>
             <h2 className="text-3xl font-bold text-slate-100 mb-8 text-center">Experience & Education</h2>
           </motion.div>
 

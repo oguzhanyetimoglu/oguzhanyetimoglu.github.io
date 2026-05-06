@@ -19,12 +19,12 @@ export default function ElysioModal() {
         </div>
 
         <p className="text-slate-300 text-sm leading-relaxed border-l-2 border-cyan-500/30 pl-4">
-          A platform that lets fashion brands produce photo-realistic campaign imagery without a physical shoot — by building AI replicas of real models and dressing them in any garment, on demand.
+          A platform that lets fashion brands produce photo-realistic campaign imagery without a physical shoot, by building AI replicas of real models and dressing them in any garment, on demand.
         </p>
 
         <ModalSection label="The Idea">
           <p className="text-slate-400 text-sm leading-relaxed">
-            The workflow was straightforward: a model or influencer uploads a set of their photos, and the platform builds a personalized AI replica of them. A fashion brand can then provide a garment image, describe a scene or mood in a prompt, and get back a photo-realistic image of that person wearing that piece — in whatever setting, lighting, or pose they want. Further refinements — background, color grading, posture — could be applied through follow-up prompts.
+            The workflow was straightforward: a model or influencer uploads a set of their photos, and the platform builds a personalized AI replica of them. A fashion brand can then provide a garment image, describe a scene or mood in a prompt, and get back a photo-realistic image of that person wearing that piece, in whatever setting, lighting, or pose they want. Further refinements (background, color grading, posture) could be applied through follow-up prompts.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed mt-3">
             The goal was to connect brands and talent through AI: brands get campaign-quality visuals without organizing a shoot, and models get a new passive revenue stream from their digital likeness.
@@ -33,7 +33,7 @@ export default function ElysioModal() {
 
         <ModalSection label="My Role">
           <p className="text-slate-400 text-sm leading-relaxed">
-            I was responsible for the technology end-to-end — the full-stack web application, the AI pipeline, and the infrastructure. The team around me shifted over time, with others occasionally contributing on the technical side, but the architecture and implementation were mine throughout. The co-founders handled the business and product direction.
+            I was responsible for the technology end-to-end: the full-stack web application, the AI pipeline, and the infrastructure. The team around me shifted over time, with others occasionally contributing on the technical side, but the architecture and implementation were mine throughout. The co-founders handled the business and product direction.
           </p>
         </ModalSection>
 
@@ -42,16 +42,16 @@ export default function ElysioModal() {
             color="bg-cyan-400/60"
             items={[
               "Users upload reference photos through a React frontend; the backend processes them and triggers fine-tuning jobs to create a personalized model",
-              "AI inference ran through Replicate, which handled the heavy compute — diffusion model runs, image generation, and iterative refinement",
+              "AI inference ran through Replicate, which handled the heavy compute: diffusion model runs, image generation, and iterative refinement",
               "The backend API, user management, and job orchestration were built with FastAPI and deployed on AWS",
-              "Each generation pass — initial outfit placement, scene setting, prompt-guided adjustments — was a separate API call with results streamed back to the UI",
+              "Each generation pass (initial outfit placement, scene setting, prompt-guided adjustments) was a separate API call with results streamed back to the UI",
             ]}
           />
         </ModalSection>
 
         <ModalSection label="What Happened">
           <p className="text-slate-400 text-sm leading-relaxed">
-            The platform never launched publicly. The co-founders decided to step back before we reached users, and the project was shelved. The technology worked — the pipeline produced solid results in testing — but it didn't make it past the startup side of things.
+            The platform never launched publicly. The co-founders decided to step back before we reached users, and the project was shelved. The technology worked, the pipeline produced solid results in testing, but it didn't make it past the startup side of things.
           </p>
         </ModalSection>
 

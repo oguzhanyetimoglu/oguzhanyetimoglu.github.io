@@ -20,12 +20,12 @@ export default function NanosimModal() {
         </div>
 
         <p className="text-slate-300 text-sm leading-relaxed border-l-2 border-violet-500/30 pl-4">
-          A research simulation tool for modeling how nanoparticles move and interact in biological environments — think drug-carrying molecules diffusing through a blood vessel, or signaling particles being absorbed by a receiver cell.
+          A research simulation tool for modeling how nanoparticles move and interact in biological environments. Think drug-carrying molecules diffusing through a blood vessel, or signaling particles being absorbed by a receiver cell.
         </p>
 
         <ModalSection label="The Problem It Solves">
           <p className="text-slate-400 text-sm leading-relaxed">
-            Molecular communication is an emerging research field where information is encoded not in electrical signals, but in the release and detection of molecules. To study how these systems behave — how reliably a signal gets through, how long it takes, how physical conditions affect it — you need to simulate large numbers of particles moving through realistic environments. Doing that at scale on a CPU is too slow to be useful for research.
+            Molecular communication is an emerging research field where information is encoded not in electrical signals, but in the release and detection of molecules. To study how these systems behave (how reliably a signal gets through, how long it takes, how physical conditions affect it), you need to simulate large numbers of particles moving through realistic environments. Doing that at scale on a CPU is too slow to be useful for research.
           </p>
         </ModalSection>
 
@@ -38,14 +38,14 @@ export default function NanosimModal() {
               <p className="text-xs font-mono text-slate-600 text-center">Brownian diffusion</p>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              NanoSim can simulate hundreds of thousands of particles simultaneously using GPU acceleration. Researchers can configure the physical setup — fluid flow, diffusivity, obstacle geometry, receiver placement — and observe how particle populations behave over time. Results are visualized as 3D particle position plots and reception time histograms, which reveal the communication channel's behavior and let researchers measure things like signal delay and absorption rate.
+              NanoSim can simulate hundreds of thousands of particles simultaneously using GPU acceleration. Researchers can configure the physical setup (fluid flow, diffusivity, obstacle geometry, receiver placement) and observe how particle populations behave over time. Results are visualized as 3D particle position plots and reception time histograms, which reveal the communication channel's behavior and let researchers measure things like signal delay and absorption rate.
             </p>
           </div>
         </ModalSection>
 
         <ModalSection label="My Contribution">
           <p className="text-slate-400 text-sm leading-relaxed">
-            My role was on the research and design side. I contributed to shaping how the simulator should behave, what physical scenarios it should support, and how its outputs should be interpreted — including thinking through the underlying models, guiding structural decisions, and validating that results held up against real-world expectations.
+            My role was on the research and design side. I contributed to shaping how the simulator should behave, what physical scenarios it should support, and how its outputs should be interpreted, including thinking through the underlying models, guiding structural decisions, and validating that results held up against real-world expectations.
           </p>
         </ModalSection>
 

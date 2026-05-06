@@ -17,7 +17,7 @@ export default function SiemensModal() {
             Worked on an internal cloud platform that ingests, processes, and monitors security telemetry at scale across Siemens infrastructure. The platform is used by security operations to detect network anomalies and correlate events across distributed systems.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
-            My thesis work was directly integrated here — I built an LLM-based anomaly detection module that embeds network flow features and flags suspicious patterns, complementing the existing rule-based detection pipeline.
+            My thesis work was directly integrated here. I built an LLM-based anomaly detection module that embeds network flow features and flags suspicious patterns, complementing the existing rule-based detection pipeline.
           </p>
         </div>
       </ModalSection>

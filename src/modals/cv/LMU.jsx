@@ -16,7 +16,7 @@ export default function LMUModal() {
             Joined a neuroimaging research group to assist with large-scale brain MRI data analysis. The goal was to build ML classifiers that could distinguish disease subtypes from structural brain scan features extracted from thousands of patient scans.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
-            I primarily worked on the data pipeline — ingesting raw MRI volumes, running preprocessing (skull stripping, normalization, feature extraction), and scheduling batch jobs on the university's HPC cluster with SLURM.
+            I primarily worked on the data pipeline: ingesting raw MRI volumes, running preprocessing (skull stripping, normalization, feature extraction), and scheduling batch jobs on the university's HPC cluster with SLURM.
           </p>
         </div>
       </ModalSection>

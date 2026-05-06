@@ -13,7 +13,7 @@ export default function AimycaModal() {
       <ModalSection label="Context">
         <div className="space-y-3">
           <p className="text-slate-400 text-sm leading-relaxed">
-            Aimyca was an early-stage SaaS startup building conversational AI tools to support companies through change and transformation processes. The team was small — around four or five engineers — and everyone wore every hat: fullstack development, DevOps, LLM operations, data science. There were no strict boundaries.
+            Aimyca was an early-stage SaaS startup building conversational AI tools to support companies through change and transformation processes. The team was small (around four or five engineers) and everyone wore every hat: fullstack development, DevOps, LLM operations, data science. There were no strict boundaries.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
             Collaborating directly with the founders on product decisions gave me exposure to both technical and business trade-offs in a fast-paced environment with short feedback loops.

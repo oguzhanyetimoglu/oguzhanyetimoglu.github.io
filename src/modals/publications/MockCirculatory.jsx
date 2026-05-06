@@ -21,7 +21,7 @@ export default function MockCirculatoryModal() {
 
       <ModalSection label="Abstract">
         <p className="text-slate-400 text-sm leading-relaxed">
-          Molecular communication is applied to advance the capabilities of healthcare and medical systems — for cancer cell localization, in-body synchronization, and anomaly detection. This paper introduces a mock circulatory network testbed for molecular communication, designed to realistically model human circulatory hemodynamics. The testbed consists of a pulsatile pump mimicking the heart, 3D-printed pulmonary arteries, a silicone vessel network, non-invasive pressure sensors, valves, information molecules, chemical sensors, and a data acquisition center.
+          Molecular communication is applied to advance the capabilities of healthcare and medical systems, for cancer cell localization, in-body synchronization, and anomaly detection. This paper introduces a mock circulatory network testbed for molecular communication, designed to realistically model human circulatory hemodynamics. The testbed consists of a pulsatile pump mimicking the heart, 3D-printed pulmonary arteries, a silicone vessel network, non-invasive pressure sensors, valves, information molecules, chemical sensors, and a data acquisition center.
         </p>
       </ModalSection>
 

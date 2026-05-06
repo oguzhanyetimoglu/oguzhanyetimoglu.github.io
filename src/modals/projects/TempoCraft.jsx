@@ -41,11 +41,11 @@ export default function TempoCraftModal() {
 
         <ModalSection label="What It Does">
           <p className="text-slate-400 text-sm leading-relaxed">
-            TempoCraft pulls your top tracks from Spotify, figures out the BPM of each one, and builds a new playlist filtered by tempo range and genre — all from the terminal. The idea came from wanting gym playlists at a specific BPM without manually sorting through hundreds of tracks.
+            TempoCraft pulls your top tracks from Spotify, figures out the BPM of each one, and builds a new playlist filtered by tempo range and genre, all from the terminal. The idea came from wanting gym playlists at a specific BPM without manually sorting through hundreds of tracks.
           </p>
         </ModalSection>
 
-        <ModalSection label="The Interesting Part — BPM Sourcing">
+        <ModalSection label="The Interesting Part: BPM Sourcing">
           <p className="text-slate-400 text-sm leading-relaxed mb-4">
             Getting reliable BPM data turns out to be harder than expected. Spotify's own audio analysis covers most tracks, but has gaps and rate limits. So the tool falls back through three independent sources in sequence:
           </p>
@@ -53,7 +53,7 @@ export default function TempoCraftModal() {
             {[
               { n: "1", label: "Spotify", desc: "The primary source. Fast and reliable for most tracks." },
               { n: "2", label: "AcousticBrainz", desc: "A free academic audio analysis database. The track has to be looked up by artist and title first to get a matching ID, then the tempo is pulled from the analysis result." },
-              { n: "3", label: "GetSongBPM", desc: "A last resort when the others fail. The tricky part here is fuzzy matching — track titles on Spotify often include extra suffixes like 'Remastered' or 'Radio Edit' that cause exact lookups to fail, so a similarity scorer is used to find the closest match." },
+              { n: "3", label: "GetSongBPM", desc: "A last resort when the others fail. The tricky part here is fuzzy matching: track titles on Spotify often include extra suffixes like 'Remastered' or 'Radio Edit' that cause exact lookups to fail, so a similarity scorer is used to find the closest match." },
             ].map(({ n, label, desc }) => (
               <div key={n} className="flex gap-3">
                 <span className="shrink-0 w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center justify-center mt-0.5">{n}</span>
@@ -65,7 +65,7 @@ export default function TempoCraftModal() {
             ))}
           </div>
           <p className="text-slate-500 text-xs mt-4 leading-relaxed">
-            Each source fails independently — if one is down or returns nothing, the next one takes over without crashing the whole run. The final result always includes which source the BPM came from.
+            Each source fails independently. If one is down or returns nothing, the next one takes over without crashing the whole run. The final result always includes which source the BPM came from.
           </p>
         </ModalSection>
 
@@ -73,11 +73,11 @@ export default function TempoCraftModal() {
           <BulletList
             color="bg-emerald-400/60"
             items={[
-              "Resilient BPM sourcing — three independent data sources with graceful fallback and per-track attribution",
-              "Fuzzy title matching — handles real-world inconsistencies in track naming across different databases",
-              "Strict data validation — invalid tracks are rejected early and never enter the analysis pipeline",
-              "No backend server required — auth tokens are cached locally using the standard OAuth flow",
-              "Two modes — a quick analysis run and a full interactive flow where the user sets BPM range and genre filters",
+              "Resilient BPM sourcing: three independent data sources with graceful fallback and per-track attribution",
+              "Fuzzy title matching that handles real-world inconsistencies in track naming across different databases",
+              "Strict data validation, invalid tracks are rejected early and never enter the analysis pipeline",
+              "No backend server required, auth tokens are cached locally using the standard OAuth flow",
+              "Two modes: a quick analysis run and a full interactive flow where the user sets BPM range and genre filters",
             ]}
           />
         </ModalSection>

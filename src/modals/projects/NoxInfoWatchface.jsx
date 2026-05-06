@@ -74,7 +74,7 @@ export default function NoxInfoWatchfaceModal() {
             {[
               {
                 title: "Battery-efficient rendering",
-                desc: "Implemented partial screen update (onPartialUpdate) to refresh the seconds display every second without triggering a full screen redraw — the standard approach on Garmin devices to preserve battery life.",
+                desc: "Implemented partial screen update (onPartialUpdate) to refresh the seconds display every second without triggering a full screen redraw, the standard approach on Garmin devices to preserve battery life.",
               },
               {
                 title: "Pixel-perfect text layout",
@@ -82,7 +82,7 @@ export default function NoxInfoWatchfaceModal() {
               },
               {
                 title: "Custom icon pipeline",
-                desc: "Automated black-to-white pixel conversion via Python and Pillow to prepare PNG icons for the monochrome MIP display — no manual editing per asset.",
+                desc: "Automated black-to-white pixel conversion via Python and Pillow to prepare PNG icons for the monochrome MIP display, with no manual editing per asset.",
               },
               {
                 title: "Programmatic timeline bar",

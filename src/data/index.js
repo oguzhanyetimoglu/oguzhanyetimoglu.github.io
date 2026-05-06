@@ -1,8 +1,8 @@
 export const profile = {
   name: "Oğuzhan Yetimoğlu",
   title: "Software Engineer · M.Sc. CS @ TUM",
-  subtitle: "I build software end to end — from UI to model to deployment.",
-  bio: "Hey! I'm Oğuzhan, a software engineer based in Munich. I recently completed my Master's degree at the Technical University of Munich (TUM), where I also worked part-time at Siemens contributing to cybersecurity monitoring tools. Most of my background is in software engineering, especially fullstack development.\n\nDuring my master's, I explored the cybersecurity space more actively — my thesis focused on applying large language models to detect anomalies in network traffic.\n\nOutside of work, I'm into running and working out. Whether it's in code or daily life, I enjoy breaking down complex systems and finding patterns that make them work better.",
+  subtitle: "I build software end to end, from UI to model to deployment.",
+  bio: "Hey! I'm Oğuzhan, a software engineer based in Munich. I recently completed my Master's degree at the Technical University of Munich (TUM), where I also worked part-time at Siemens contributing to cybersecurity monitoring tools. Most of my background is in software engineering, especially fullstack development.\n\nDuring my master's, I explored the cybersecurity space more actively. My thesis focused on applying large language models to detect anomalies in network traffic.\n\nOutside of work, I'm into running and working out. Whether it's in code or daily life, I enjoy breaking down complex systems and finding patterns that make them work better.",
   location: "Munich, Germany",
   email: "oguzhanyetimoglu@gmail.com",
   links: {
@@ -70,7 +70,7 @@ export const projects = [
   {
     title: "FinK Analytica",
     year: 2024,
-    description: "A containerized web app that lets analysts search and cluster thousands of SEC 10-K filings using TF-IDF, Word2Vec, or BERT embeddings — built as a team project at TU Munich.",
+    description: "A containerized web app that lets analysts search and cluster thousands of SEC 10-K filings using TF-IDF, Word2Vec, or BERT embeddings, built as a team project at TU Munich.",
     tags: ["Nuxt.js", "Django", "PostgreSQL", "scikit-learn", "sentence-transformers"],
     category: "school",
     github: "https://github.com/oguzhanyetimoglu/algorithmic-textual-comparison-app",
@@ -79,7 +79,7 @@ export const projects = [
   {
     title: "Elysio.ai",
     year: 2023,
-    description: "A platform for fashion brands to produce photo-realistic campaign imagery without a shoot — by building AI replicas of models and dressing them in any garment, on demand.",
+    description: "A platform for fashion brands to produce photo-realistic campaign imagery without a shoot, by building AI replicas of models and dressing them in any garment, on demand.",
     tags: ["React", "FastAPI", "AWS", "Replicate", "Diffusion Models"],
     category: "work",
     highlights: ["AI-generated model replicas", "Prompt-driven photo editing", "Lead engineer end-to-end"],
