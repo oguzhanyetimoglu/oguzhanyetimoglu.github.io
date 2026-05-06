@@ -1,11 +1,22 @@
 import loremasterImg from "../../assets/projects/loremaster.png";
+import home from "../../assets/projects/loremaster/01_home.png";
+import homeLight from "../../assets/projects/loremaster/01_home_light.png";
+import realmsGrid from "../../assets/projects/loremaster/02_realms_grid.png";
+import realmsGridLight from "../../assets/projects/loremaster/02_realms_grid_light.png";
+import quiz from "../../assets/projects/loremaster/03_quiz_questions.png";
+import rankings from "../../assets/projects/loremaster/04_rankings.png";
+import rankingsLight from "../../assets/projects/loremaster/04_rankings_light.png";
+import profile from "../../assets/projects/loremaster/06_profile.png";
+import profileLight from "../../assets/projects/loremaster/06_profile_light.png";
+import realmDetail from "../../assets/projects/loremaster/07_realm_detail.png";
 import { ModalSection, TagList, BulletList } from "../ModalShell";
+import ScreenGallery from "../ScreenGallery";
 
 export default function LoreMasterModal() {
   return (
     <>
       <div className="w-full h-52 overflow-hidden bg-[#0a1120]">
-        <img src={loremasterImg} alt="LoreMaster" className="w-full h-full object-contain object-center" />
+        <img src={loremasterImg} alt="LoreMaster" className="w-full h-full object-cover object-center" />
       </div>
 
       <div className="p-6 space-y-6">
@@ -26,6 +37,38 @@ export default function LoreMasterModal() {
           <p className="text-slate-400 text-sm leading-relaxed">
             Players pick from a roster of realms that grows over time. Today the live set spans fantasy and sci-fi favorites such as LOTR, Harry Potter, Game of Thrones, Star Wars, Marvel, Warhammer, and Dune, with more realms added through the admin panel without shipping a new build. The daily flow is simple: pick a realm, answer the day&apos;s short quiz, and your streak ticks up. Wrong answers reveal the correct one immediately, and the auth funnel starts anonymous so no signup gate stands between a curious tap and the first question.
           </p>
+        </ModalSection>
+
+        <ModalSection label="Screens">
+          <p className="text-slate-400 text-sm leading-relaxed mb-4">
+            The full player journey, from the daily feed to a finished quiz. Each realm carries its own art, palette, and atmosphere; new realms ship without a new build.
+          </p>
+          <ScreenGallery
+            gridClass="grid grid-cols-2 sm:grid-cols-3 gap-3"
+            figureClass="bg-black/40"
+            items={[
+              { src: home, label: "Home" },
+              { src: realmsGrid, label: "Realms" },
+              { src: realmDetail, label: "Realm Hub" },
+              { src: quiz, label: "Daily Quiz" },
+              { src: rankings, label: "Rankings" },
+              { src: profile, label: "Profile" },
+            ]}
+          />
+
+          <p className="text-slate-500 text-xs mt-6 mb-3 leading-relaxed">
+            Theme through <span className="font-mono text-slate-400">useAppTheme()</span> only, every screen verified in dark and light, no raw hex anywhere in the tree.
+          </p>
+          <ScreenGallery
+            gridClass="grid grid-cols-2 sm:grid-cols-4 gap-3"
+            figureClass="bg-white/[0.02]"
+            items={[
+              { src: homeLight, label: "Home", alt: "Home (light)" },
+              { src: realmsGridLight, label: "Realms", alt: "Realms (light)" },
+              { src: rankingsLight, label: "Rankings", alt: "Rankings (light)" },
+              { src: profileLight, label: "Profile", alt: "Profile (light)" },
+            ]}
+          />
         </ModalSection>
 
         <ModalSection label="The Monorepo">

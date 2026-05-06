@@ -8,6 +8,7 @@ import NanosimModal from "../modals/projects/Nanosim";
 import TempoCraftModal from "../modals/projects/TempoCraft";
 import NoxInfoWatchfaceModal from "../modals/projects/NoxInfoWatchface";
 import LoreMasterModal from "../modals/projects/LoreMaster";
+import BeatifyModal from "../modals/projects/Beatify";
 import QuizForgeModal from "../modals/projects/QuizForge";
 
 const categoryColor = {
@@ -19,6 +20,7 @@ const categoryColor = {
 
 const modalMap = {
   LoreMaster: LoreMasterModal,
+  Beatify: BeatifyModal,
   "quiz-forge": QuizForgeModal,
   "Instinct 2 Watchface - Nox Info": NoxInfoWatchfaceModal,
   "FinK Analytica": FinKAnalyticaModal,

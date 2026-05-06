@@ -40,6 +40,15 @@ export const projects = [
     highlights: ["Free-tier only: zero paid models, end to end", "Cross-family validator discipline", "Source-grounded substring guarantee", "Resumable at every stage"],
   },
   {
+    title: "Beatify",
+    year: 2026,
+    description: "A React Native mobile app that turns your Spotify listening history into deep analytics, music personality archetypes, and shareable cards. Includes social features: follow friends, compare taste similarity, and DM with music sharing cards.",
+    tags: ["React Native", "Expo", "TypeScript", "Supabase", "Zustand", "Spotify Web API"],
+    category: "fun",
+    github: "https://github.com/oguzhanyetimoglu/beatify",
+    highlights: ["14 music archetypes scored from listening patterns", "Spotify PKCE OAuth bridged to Supabase auth", "Realtime DMs with shareable music cards", "Localized in 4 languages"],
+  },
+  {
     title: "Instinct 2 Watchface - Nox Info",
     year: 2026,
     description: "A custom watch face for the Garmin Instinct 2, built from scratch in Monkey C. Features real-time heart rate, weather, GPS-based sunrise/sunset, and a 24-hour day/night timeline bar. Published on the Garmin Connect IQ Store.",

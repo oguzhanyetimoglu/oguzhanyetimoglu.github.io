@@ -1,4 +1,5 @@
 import { ModalSection, TagList } from "../ModalShell";
+import PublicationMedia from "../PublicationMedia";
 
 export default function MockCirculatoryModal() {
   return (
@@ -25,22 +26,23 @@ export default function MockCirculatoryModal() {
       </ModalSection>
 
       <ModalSection label="Testbed">
-        <div className="space-y-3">
-          <img
-            src="/publications/mcn_mold_testbed.jpeg"
-            alt="Mock circulatory network mold and testbed structure"
-            className="w-full rounded-lg border border-white/10 object-cover"
-          />
-          <video
-            src="/publications/mcn_testbed_sensor_setup.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full rounded-lg border border-white/10 object-cover"
-          />
-          <p className="text-xs font-mono text-slate-600">Mock circulatory network — mold structure and sensor setup in operation</p>
-        </div>
+        <PublicationMedia
+          items={[
+            {
+              type: "video",
+              src: "/publications/mcn_testbed_sensor_setup.mp4",
+              label: "Sensor setup in operation",
+              span: "full",
+            },
+            {
+              type: "image",
+              src: "/publications/mcn_mold_testbed.jpeg",
+              label: "3D-printed pulmonary artery mold",
+              alt: "3D-printed pulmonary artery mold",
+              span: "full",
+            },
+          ]}
+        />
       </ModalSection>
 
       <ModalSection label="Venue">

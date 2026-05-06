@@ -3,10 +3,10 @@ import { ModalSection, TagList, BulletList } from "../ModalShell";
 const stages = [
   { name: "discover", desc: "Pick pages" },
   { name: "ingest", desc: "Wikitext → SQLite" },
-  { name: "generate", desc: "Cerebras Qwen 235B" },
+  { name: "generate", desc: "Qwen 235B / Mistral Large / Gemma 27B" },
   { name: "tier 1", desc: "Substring + format" },
-  { name: "tier 2", desc: "Cross-family LLM" },
-  { name: "tier 3", desc: "Tie-breaker" },
+  { name: "tier 2", desc: "Llama 3.3 70B + Mistral Small" },
+  { name: "tier 3", desc: "Gemini 3 Flash" },
   { name: "dedup", desc: "BGE + ChromaDB" },
   { name: "export", desc: "Pipe-separated .txt" },
 ];

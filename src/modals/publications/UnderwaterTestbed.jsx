@@ -1,4 +1,5 @@
 import { ModalSection, TagList } from "../ModalShell";
+import PublicationMedia from "../PublicationMedia";
 
 export default function UnderwaterTestbedModal() {
   return (
@@ -25,29 +26,28 @@ export default function UnderwaterTestbedModal() {
       </ModalSection>
 
       <ModalSection label="Testbed">
-        <div className="space-y-3">
-          <div className="grid grid-cols-2 gap-2">
-            <img
-              src="/publications/underwater_testbed.jpeg"
-              alt="Underwater testbed setup"
-              className="w-full rounded-lg border border-white/10 object-cover"
-            />
-            <img
-              src="/publications/underwater_testbed_2.jpeg"
-              alt="Underwater testbed — alternate view"
-              className="w-full rounded-lg border border-white/10 object-cover"
-            />
-          </div>
-          <video
-            src="/publications/underwater_testbed.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full rounded-lg border border-white/10 object-cover"
-          />
-          <p className="text-xs font-mono text-slate-600">Water channel testbed — physical setup and experiment in operation</p>
-        </div>
+        <PublicationMedia
+          items={[
+            {
+              type: "video",
+              src: "/publications/underwater_testbed.mp4",
+              label: "Experiment in operation",
+              span: "full",
+            },
+            {
+              type: "image",
+              src: "/publications/underwater_testbed.jpeg",
+              label: "Dye plume under laser sheet",
+              alt: "Dye plume illuminated by laser sheet inside the water channel",
+            },
+            {
+              type: "image",
+              src: "/publications/underwater_testbed_2.jpeg",
+              label: "Lab setup overview",
+              alt: "Full lab setup with channel, camera, and acquisition monitor",
+            },
+          ]}
+        />
       </ModalSection>
 
       <ModalSection label="Venue">
