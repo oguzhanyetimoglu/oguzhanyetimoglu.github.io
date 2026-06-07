@@ -183,14 +183,14 @@ export const education = [
     school: "Bogazici University",
     location: "Istanbul, Turkey",
     period: "09/2019 – 09/2022",
-    items: ["Research: Molecular Communications & Signal Processing", "Thesis: Source Localization for Molecular Communication via Diffusion", "Published 4 international papers", "Grade: 4.0 / 4.0"],
+    items: ["Research: Molecular Communications & Signal Processing", "Thesis: Source Localization for Molecular Communication via Diffusion", "Published 4 international papers", "Grade: 4.0, 4.0 = best"],
   },
   {
     degree: "B.Sc. Computer Engineering",
     school: "Bogazici University",
     location: "Istanbul, Turkey",
     period: "09/2014 – 07/2019",
-    items: ["Algorithms, data structures, software development", "Grade: 2.8 / 4.0"],
+    items: ["Algorithms, data structures, software development", "Grade: 2.8, 4.0 = best"],
   },
 ];
 
