@@ -5,7 +5,7 @@ export default function LMUModal() {
     <div className="p-6 space-y-6">
       <div>
         <p className="text-xs font-mono text-slate-600 mb-1">10/2023 – 06/2024 · Munich, Germany</p>
-        <h2 className="text-2xl font-bold text-slate-100">Graduate Research Assistant</h2>
+        <h2 className="text-2xl font-bold text-slate-100">Student Research Assistant</h2>
         <p className="text-cyan-400 font-mono text-sm mt-1">Ludwig Maximilian University (LMU)</p>
         <p className="text-xs text-slate-500 mt-1">Neuroimaging Research Group</p>
       </div>
@@ -26,7 +26,7 @@ export default function LMUModal() {
           items={[
             "Processed large-scale brain MRI neuroimaging datasets using ML and statistical modeling to classify disease presence and subtype patterns",
             "Parallelized preprocessing and processing pipelines on HPC clusters, significantly accelerating feature extraction and model execution",
-            "Automated ETL steps, standardized feature extraction, and optimized job scheduling for improved research workflow reliability",
+            "Automated ETL steps and SLURM job scheduling to make the research workflow reproducible across reruns",
           ]}
         />
       </ModalSection>

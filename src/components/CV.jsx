@@ -13,7 +13,7 @@ const experienceModalMap = {
   Siemens: SiemensModal,
   "Ludwig Maximilian University (LMU)": LMUModal,
   "Aimyca GmbH": AimycaModal,
-  "NETLAB, Boğaziçi University": NETLABModal,
+  "NETLAB, Bogazici University": NETLABModal,
   "Idea Technology": IdeaTechModal,
   "CTech Information Technologies": CTechModal,
   VeriPark: VeriParkModal,

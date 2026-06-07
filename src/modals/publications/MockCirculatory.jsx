@@ -16,7 +16,7 @@ export default function MockCirculatoryModal() {
       </div>
 
       <ModalSection label="Authors">
-        <p className="text-slate-400 text-sm">Barış Büyüktaş, Oğuzhan Yetimoğlu, Abdurrahman Dilmaç, Zeliha Cansu Canbek, H. Birkan Yilmaz</p>
+        <p className="text-slate-400 text-sm">Barış Büyüktaş, Oguzhan Yetimoglu, Abdurrahman Dilmaç, Zeliha Cansu Canbek, H. Birkan Yilmaz</p>
       </ModalSection>
 
       <ModalSection label="Abstract">

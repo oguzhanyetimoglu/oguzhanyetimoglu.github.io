@@ -9,7 +9,7 @@ export default function ResumeModal({ onClose }) {
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 pr-14 border-b border-white/[0.06] shrink-0">
             <div>
-              <p className="text-slate-200 text-sm font-medium">Oğuzhan Yetimoğlu</p>
+              <p className="text-slate-200 text-sm font-medium">Oguzhan Yetimoglu</p>
               <p className="text-slate-500 text-xs font-mono">Resume</p>
             </div>
             <a

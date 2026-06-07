@@ -41,7 +41,7 @@ export default function ElysioModal() {
           <BulletList
             color="bg-cyan-400/60"
             items={[
-              "Users upload reference photos through a React frontend; the backend processes them and triggers fine-tuning jobs to create a personalized model",
+              "Users upload reference photos through a React frontend; the backend processes them and orchestrates Replicate-hosted Stable Diffusion runs to produce personalized outputs",
               "AI inference ran through Replicate, which handled the heavy compute: diffusion model runs, image generation, and iterative refinement",
               "The backend API, user management, and job orchestration were built with FastAPI and deployed on AWS",
               "Each generation pass (initial outfit placement, scene setting, prompt-guided adjustments) was a separate API call with results streamed back to the UI",

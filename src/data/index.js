@@ -1,10 +1,10 @@
 export const profile = {
-  name: "Oğuzhan Yetimoğlu",
-  title: "Software Engineer · M.Sc. CS @ TUM",
+  name: "Oguzhan Yetimoglu",
+  title: "Software Engineer · M.Sc. Informatics @ TUM",
   subtitle: "I build software end to end, from UI to model to deployment.",
-  bio: "Hey! I'm Oğuzhan, a software engineer based in Munich. I recently completed my Master's degree at the Technical University of Munich (TUM), where I also worked part-time at Siemens contributing to cybersecurity monitoring tools. Most of my background is in software engineering, especially fullstack development.\n\nDuring my master's, I explored the cybersecurity space more actively. My thesis focused on applying large language models to detect anomalies in network traffic.\n\nOutside of work, I'm into running and working out. Whether it's in code or daily life, I enjoy breaking down complex systems and finding patterns that make them work better.",
+  bio: "Hey! I'm Oguzhan, a software engineer based in Munich. I just finished my M.Sc. in Informatics at the Technical University of Munich (TUM), and during my studies I worked as a working student at Siemens on a cloud-based security analytics platform. Most of what I do is full-stack, and over time I've leaned more into AI and machine learning.\n\nMy thesis applied large language models to detect anomalies in network traffic. On the side I like building things end to end on my own, like a mobile quiz app with an LLM-driven question pipeline and a generative AI prototype I built as the sole engineer.\n\nOutside of work I'm into running and working out, and I spend a lot of time in grand strategy and survival games. History is a real interest of mine too, which is probably why the strategy games stuck.",
   location: "Munich, Germany",
-  email: "oguzhanyetimoglu@gmail.com",
+  email: "jobs@oguzhanyetimoglu.com",
   links: {
     github: "https://github.com/oguzhanyetimoglu",
     linkedin: "https://www.linkedin.com/in/oguzhan-yetimoglu/",
@@ -15,10 +15,10 @@ export const profile = {
 };
 
 export const skills = [
-  { category: "Languages & Frameworks", items: ["Python", "TypeScript", "JavaScript", "Java", "C++", "React", "Next.js", "Vue", "Nuxt.js", "Node.js", "FastAPI", "Django", "Flask"] },
+  { category: "Languages & Frameworks", items: ["Python", "TypeScript", "JavaScript", "Java", "C++", "React", "React Native", "Next.js", "Expo", "Vue", "Nuxt.js", "Node.js", "FastAPI"] },
   { category: "Cloud & DevOps", items: ["Docker", "Kubernetes", "AWS", "GCP", "Azure", "GitHub Actions", "GitLab CI", "CI/CD", "Linux", "Bash"] },
-  { category: "Data & ML", items: ["PyTorch", "scikit-learn", "Pandas", "NumPy", "NLP", "LLMs", "RAG", "Embeddings", "Vector DBs"] },
-  { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"] },
+  { category: "Data & ML", items: ["scikit-learn", "SciPy", "Pandas", "NumPy", "NLP", "LLMs", "Embeddings", "Vector DBs", "AI-assisted development"] },
+  { category: "Databases", items: ["PostgreSQL", "MongoDB", "Firebase (Firestore)"] },
   { category: "Frontend", items: ["Tailwind CSS", "Material UI", "Responsive UI", "Component Architecture"] },
 ];
 
@@ -29,7 +29,7 @@ export const projects = [
     description: "Multi-realm fantasy/sci-fi lore quiz. A solo, end-to-end production app: Android (Expo), Next.js admin panel, static marketing site, and a Firebase backend, all in one TypeScript monorepo.",
     tags: ["TypeScript", "React Native", "Next.js", "Firebase", "Cloud Functions", "Expo"],
     category: "fun",
-    highlights: ["Solo from design to deployment: mobile, admin, cloud functions, marketing", "Server-authoritative scoring with idempotent writes", "Async 1v1 duels (StreakDuel + RealmCrown)"],
+    highlights: ["Solo from design to deployment: mobile, admin, cloud functions, marketing", "Server-authoritative scoring with idempotent writes", "Async 1v1 duels (StreakDuel + RealmCrown)", "CI/CD on GitHub Actions with Jest + Maestro E2E + EAS", "LiteLLM question pipeline with multi-provider fallback"],
   },
   {
     title: "quiz-forge",
@@ -101,21 +101,21 @@ export const experience = [
     location: "Munich, Germany",
     period: "06/2024 – 09/2025",
     items: [
-      "Modernized a cloud-based security analytics platform using Java, Docker, Azure, and Apache NiFi, improving stability and dataflow reliability across ingestion and monitoring workloads.",
-      "Built an LLM-powered network intrusion detection module (Python, embeddings, anomaly detection) that strengthened detection quality in distributed data pipelines.",
-      "Optimized containerized microservices to reduce resource consumption and improve runtime efficiency in Azure-based environments.",
-      "Improved microservice build consistency by restructuring Dockerfile stages and ensuring reproducible container environments across Azure deployments.",
+      "Reworked Apache NiFi internals on a Java microservices security analytics platform, clearing pipeline bottlenecks and fixing inter-service communication issues that were limiting stability.",
+      "Built an LLM-based network intrusion detection module in Python as my master's thesis, applied to the platform's ingested traffic data.",
+      "Made the NiFi data pipeline configurable via JSON so non-engineering teammates could compose pipelines without touching Java.",
+      "Cut Docker image size and build time by restructuring base images, dependency layers, and build scripts for reproducible container builds on Azure (AKS).",
     ],
   },
   {
-    title: "Graduate Research Assistant",
+    title: "Student Research Assistant",
     company: "Ludwig Maximilian University (LMU)",
     location: "Munich, Germany",
     period: "10/2023 – 06/2024",
     items: [
       "Processed large-scale brain MRI neuroimaging datasets using ML and statistical modeling to classify disease presence and subtype patterns.",
       "Parallelized preprocessing and processing pipelines on HPC clusters, significantly accelerating feature extraction and model execution workloads.",
-      "Improved research workflow reliability by automating ETL steps, standardizing feature extraction, and optimizing job scheduling.",
+      "Automated ETL steps and SLURM job scheduling to make the research workflow reproducible across reruns.",
     ],
   },
   {
@@ -126,19 +126,19 @@ export const experience = [
     items: [
       "Delivered full-stack features using Python, Node.js, React, Vue, TypeScript, and REST APIs in an agile SaaS environment.",
       "Built user-centric interfaces with clean component architectures and optimized interaction flows.",
-      "Developed Docker-based CI/CD pipelines on GCP to stabilize deployments and improve system reliability.",
-      "Enhanced conversational AI features through LLM fine-tuning, improved prompt structures, and refined extraction logic.",
-      "Collaborated directly with founders on architecture, technical design, and product-level prioritization.",
+      "Set up CI/CD with Bitbucket Pipelines and Jira on GCP to stabilize deployments.",
+      "Improved conversational AI features through prompt engineering and refined extraction logic against LLM APIs.",
+      "Worked closely with the founding team on technical discussions and product decisions in a ~10 person startup.",
     ],
   },
   {
     title: "Graduate Research Assistant / Software Engineer",
-    company: "NETLAB, Boğaziçi University",
+    company: "NETLAB, Bogazici University",
     location: "Istanbul, Turkey",
     period: "02/2020 – 12/2021",
     items: [
-      "Implemented simulation algorithms and C++/Python testbeds for TÜBİTAK (The Scientific and Technological Research Council of Turkey)-funded molecular communication research, improving experiment reproducibility.",
-      "Built embedded integrations with Raspberry Pi and Arduino, stabilizing hardware-based data acquisition pipelines.",
+      "Implemented simulation algorithms and C++/Python testbeds for TUBITAK (The Scientific and Technological Research Council of Turkey)-funded molecular communication research, improving experiment reproducibility.",
+      "Built embedded data acquisition on Raspberry Pi and Arduino for sensor- and actuator-based experimental testbeds, wiring the hardware and automating the code.",
     ],
   },
   {
@@ -176,18 +176,18 @@ export const education = [
     school: "Technical University of Munich (TUM)",
     location: "Munich, Germany",
     period: "09/2023 – 09/2025",
-    items: ["Focus: ML & LLMs · Software Engineering · Cybersecurity", "Thesis: AI-Powered Security: Leveraging Large Language Models for Network Anomaly-based Detection", "Grade: 1.6 / 1.0 best"],
+    items: ["Focus: ML & LLMs · Software Engineering · Cybersecurity", "Thesis: AI-Powered Security: Leveraging Large Language Models for Network Anomaly-based Detection", "Grade: 1.6, 1.0 = best"],
   },
   {
     degree: "M.Sc. Computer Engineering",
-    school: "Boğaziçi University",
+    school: "Bogazici University",
     location: "Istanbul, Turkey",
     period: "09/2019 – 09/2022",
     items: ["Research: Molecular Communications & Signal Processing", "Thesis: Source Localization for Molecular Communication via Diffusion", "Published 4 international papers", "Grade: 4.0 / 4.0"],
   },
   {
     degree: "B.Sc. Computer Engineering",
-    school: "Boğaziçi University",
+    school: "Bogazici University",
     location: "Istanbul, Turkey",
     period: "09/2014 – 07/2019",
     items: ["Algorithms, data structures, software development", "Grade: 2.8 / 4.0"],

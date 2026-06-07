@@ -6,14 +6,14 @@ export default function NETLABModal() {
       <div>
         <p className="text-xs font-mono text-slate-600 mb-1">02/2020 – 12/2021 · Istanbul, Turkey</p>
         <h2 className="text-2xl font-bold text-slate-100">Research Assistant / Software Engineer</h2>
-        <p className="text-cyan-400 font-mono text-sm mt-1">NETLAB, Boğaziçi University</p>
-        <p className="text-xs text-slate-500 mt-1">Molecular Communications Research Lab · TÜBİTAK (The Scientific and Technological Research Council of Turkey)-funded</p>
+        <p className="text-cyan-400 font-mono text-sm mt-1">NETLAB, Bogazici University</p>
+        <p className="text-xs text-slate-500 mt-1">Molecular Communications Research Lab · TUBITAK (The Scientific and Technological Research Council of Turkey)-funded</p>
       </div>
 
       <ModalSection label="Context">
         <div className="space-y-3">
           <p className="text-slate-400 text-sm leading-relaxed">
-            Worked across two research labs on TÜBİTAK-funded projects in molecular communication, a field studying how nanoscale devices can communicate using molecules rather than radio waves. Applications range from targeted drug delivery to bio-cyber interfaces.
+            Worked across two research labs on TUBITAK-funded projects in molecular communication, a field studying how nanoscale devices can communicate using molecules rather than radio waves. Applications range from targeted drug delivery to bio-cyber interfaces.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
             I built the simulation and hardware testbed infrastructure that supported the labs' experiments. This work directly led to the Nanosim library and contributed to four published papers.

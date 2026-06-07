@@ -17,7 +17,7 @@ export default function SiemensModal() {
             Worked on an internal cloud platform that ingests, processes, and monitors security telemetry at scale across Siemens infrastructure. The platform is used by security operations to detect network anomalies and correlate events across distributed systems.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed">
-            My thesis work was directly integrated here. I built an LLM-based anomaly detection module that embeds network flow features and flags suspicious patterns, complementing the existing rule-based detection pipeline.
+            My thesis work was directly integrated here. I built an LLM-based network intrusion detection module that complements the existing rule-based detection pipeline.
           </p>
         </div>
       </ModalSection>
@@ -25,16 +25,16 @@ export default function SiemensModal() {
       <ModalSection label="What I Did">
         <BulletList
           items={[
-            "Modernized a cloud-based security analytics platform using Java, Docker, Azure, and Apache NiFi, improving stability and dataflow reliability across ingestion and monitoring workloads",
-            "Built an LLM-powered network intrusion detection module (Python, embeddings, anomaly detection) that strengthened detection quality in distributed data pipelines",
-            "Optimized containerized microservices to reduce resource consumption and improve runtime efficiency in Azure-based environments",
-            "Improved microservice build consistency by restructuring Dockerfile stages and ensuring reproducible container environments",
+            "Reworked Apache NiFi internals on a Java microservices security analytics platform, clearing pipeline bottlenecks and fixing inter-service communication issues that were limiting stability",
+            "Built an LLM-based network intrusion detection module in Python as my master's thesis, applied to the platform's ingested traffic data",
+            "Made the NiFi data pipeline configurable via JSON so non-engineering teammates could compose pipelines without touching Java",
+            "Cut Docker image size and build time by restructuring base images, dependency layers, and build scripts for reproducible container builds on Azure (AKS)",
           ]}
         />
       </ModalSection>
 
       <ModalSection label="Stack">
-        <TagList tags={["Java", "Python", "Docker", "Azure", "Apache NiFi", "LLMs", "Embeddings", "Vector Search"]} />
+        <TagList tags={["Java", "Python", "Docker", "Azure (AKS)", "Apache NiFi", "GitLab CI", "LLMs"]} />
       </ModalSection>
     </div>
   );

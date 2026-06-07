@@ -62,13 +62,13 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1 variants={item} className="text-5xl md:text-7xl font-bold tracking-tight text-slate-100 mb-4 leading-tight">
-          Oğuzhan
+          Oguzhan
           <br />
-          <span className="gradient-text">Yetimoğlu</span>
+          <span className="gradient-text">Yetimoglu</span>
         </motion.h1>
 
         <motion.p variants={item} className="text-lg text-slate-400 font-mono mb-4">
-          Software Engineer · M.Sc. CS @ TUM
+          Software Engineer · M.Sc. Informatics @ TUM
         </motion.p>
 
         <motion.p variants={item} className="text-slate-500 max-w-md mx-auto mb-10 leading-relaxed">

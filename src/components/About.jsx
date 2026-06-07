@@ -29,7 +29,7 @@ export default function About() {
             variants={fadeUp}
             className="text-center font-mono text-sm sm:text-base mb-12"
           >
-            <span className="text-slate-300">Oğuzhan</span>
+            <span className="text-slate-300">Oguzhan</span>
             <span className="text-slate-500"> [oˈuːzhan] </span>
             <span className="text-slate-600">·</span>
             <span className="text-slate-400"> he/him</span>

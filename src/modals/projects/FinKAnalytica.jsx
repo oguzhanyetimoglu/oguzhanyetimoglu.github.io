@@ -97,7 +97,7 @@ export default function FinKAnalyticaModal() {
 
         <ModalSection label="Team">
           <p className="text-slate-400 text-sm">
-            Abdurrahman Dilmac, Berkay Kozan, Oğuzhan Yetimoğlu, equal contributions, developed at TU Munich.
+            Abdurrahman Dilmac, Berkay Kozan, Oguzhan Yetimoglu, equal contributions, developed at TU Munich.
           </p>
         </ModalSection>
 
