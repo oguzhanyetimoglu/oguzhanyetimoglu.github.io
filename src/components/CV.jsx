@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { experience, education } from "../data";
 import ModalShell from "../modals/ModalShell";
+import OnyvenModal from "../modals/cv/Onyven";
 import SiemensModal from "../modals/cv/Siemens";
 import LMUModal from "../modals/cv/LMU";
 import AimycaModal from "../modals/cv/Aimyca";
@@ -10,6 +11,7 @@ import IdeaTechModal from "../modals/cv/IdeaTech";
 import CTechModal from "../modals/cv/CTech";
 import VeriParkModal from "../modals/cv/VeriPark";
 const experienceModalMap = {
+  ONYVEN: OnyvenModal,
   Siemens: SiemensModal,
   "Ludwig Maximilian University (LMU)": LMUModal,
   "Aimyca GmbH": AimycaModal,
@@ -79,14 +81,14 @@ export default function CV() {
 
   return (
     <>
-      <section id="background" ref={ref} className="py-24 px-6">
+      <section id="experience" ref={ref} className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">03 · Background</p>
+            <p className="font-mono text-xs text-cyan-400 mb-2 tracking-widest uppercase text-center">02 · Experience</p>
             <h2 className="text-3xl font-bold text-slate-100 mb-8 text-center">Experience & Education</h2>
           </motion.div>
 

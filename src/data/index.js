@@ -1,8 +1,8 @@
 export const profile = {
   name: "Oguzhan Yetimoglu",
-  title: "Software Engineer · M.Sc. Informatics @ TUM",
-  subtitle: "I build software end to end, from UI to model to deployment.",
-  bio: "Hey! I'm Oguzhan, a software engineer based in Munich. I just finished my M.Sc. in Informatics at the Technical University of Munich (TUM), and during my studies I worked as a working student at Siemens on a cloud-based security analytics platform. Most of what I do is full-stack, and over time I've leaned more into AI and machine learning.\n\nMy thesis applied large language models to detect anomalies in network traffic. On the side I like building things end to end on my own, like a mobile quiz app with an LLM-driven question pipeline and a generative AI prototype I built as the sole engineer.\n\nOutside of work I'm into running and working out, and I spend a lot of time in grand strategy and survival games. History is a real interest of mine too, which is probably why the strategy games stuck.",
+  title: "Founding Engineer @ ONYVEN · M.Sc. Informatics, TUM",
+  subtitle: "Founding engineer at ONYVEN, where we build AI agents that help companies run their supply chains. I write the code, lead the product, and sell it too.",
+  bio: "Hey! I'm Oguzhan, a software engineer based in Munich and a founding engineer at ONYVEN. We build AI agents that help companies run their supply chains. The work that keeps a supply chain moving is spread across ERP systems, email threads, PDFs, Excel sheets, and the people in between. Our agents plug into those systems, pick up the work that falls through the gaps, and bring a person in when a decision is needed.\n\nFounding engineer is a wide role. I build the product and lead where it goes. Go-to-market and sales I work through with the founder: who we sell to, how we position, and how we get from a first conversation to a close. I like that mix. I get to see the whole loop from a customer's problem to an agent running in their operation, and each part of it makes me better at the others.\n\nMy background is software engineering and machine learning. I hold an M.Sc. in Informatics from the Technical University of Munich (TUM), where my thesis used large language models to detect anomalies in network traffic, and I worked at Siemens on a cloud security analytics platform. On the side I build things end to end on my own, like a mobile quiz app with an LLM-driven question pipeline.\n\nOutside of work I'm into running and working out, and I spend a lot of time in grand strategy and survival games. History is a real interest of mine too, which is probably why the strategy games stuck.",
   location: "Munich, Germany",
   email: "jobs@oguzhanyetimoglu.com",
   links: {
@@ -17,7 +17,8 @@ export const profile = {
 export const skills = [
   { category: "Languages & Frameworks", items: ["Python", "TypeScript", "JavaScript", "Java", "C++", "React", "React Native", "Next.js", "Expo", "Vue", "Nuxt.js", "Node.js", "FastAPI"] },
   { category: "Cloud & DevOps", items: ["Docker", "Kubernetes", "AWS", "GCP", "Azure", "GitHub Actions", "GitLab CI", "CI/CD", "Linux", "Bash"] },
-  { category: "Data & ML", items: ["scikit-learn", "SciPy", "Pandas", "NumPy", "NLP", "LLMs", "Embeddings", "Vector DBs", "AI-assisted development"] },
+  { category: "AI & Data", items: ["LLMs", "AI Agents", "Agentic Workflows", "RAG", "Embeddings", "Vector DBs", "NLP", "scikit-learn", "Pandas", "NumPy", "SciPy", "AI-assisted development"] },
+  { category: "Product & Go-to-Market", items: ["Customer Discovery", "Product Ownership", "Solution Engineering", "Enterprise Sales", "GTM Strategy", "Implementation & Rollout"] },
   { category: "Databases", items: ["PostgreSQL", "MongoDB", "Firebase (Firestore)"] },
   { category: "Frontend", items: ["Tailwind CSS", "Material UI", "Responsive UI", "Component Architecture"] },
 ];
@@ -95,6 +96,18 @@ export const projects = [
 ];
 
 export const experience = [
+  {
+    title: "Founding Engineer",
+    company: "ONYVEN",
+    location: "Munich, Germany",
+    period: "06/2026 – Present",
+    items: [
+      "Build and ship AI agents that help companies run their supply chains, working on top of the ERP, email, PDF, and Excel flows they already have.",
+      "Lead the product: run discovery sessions with operations teams, map their workflows, and turn what we learn into requirements, prototypes, and the roadmap.",
+      "Drive go-to-market and sales together with the founder, from which segments we go after and how we position to carrying each conversation from first contact to close.",
+      "Support customer implementations end to end, and feed the patterns that show up across customers back into the product.",
+    ],
+  },
   {
     title: "Software Engineer (Working Student)",
     company: "Siemens",

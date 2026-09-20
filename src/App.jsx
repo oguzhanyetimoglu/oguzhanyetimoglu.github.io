@@ -19,11 +19,11 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
-        <Projects />
+        <CV />
         <div className="max-w-5xl mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
-        <CV />
+        <Projects />
         <div className="max-w-5xl mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { profile } from "../data";
 import ResumeModal from "../modals/ResumeModal";
+import portrait from "../assets/portrait.jpg";
 
 const socialIcons = {
   github: (
@@ -56,9 +57,19 @@ export default function Hero() {
         animate="show"
         className="relative max-w-2xl w-full text-center"
       >
+        <motion.div variants={item} className="flex justify-center mb-6">
+          <img
+            src={portrait}
+            alt="Oguzhan Yetimoglu"
+            width="112"
+            height="112"
+            className="w-28 h-28 rounded-full object-cover ring-1 ring-cyan-500/30 ring-offset-4 ring-offset-[#030712] shadow-[0_0_40px_rgba(6,182,212,0.12)]"
+          />
+        </motion.div>
+
         <motion.div variants={item} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-cyan-500/20 text-cyan-400 text-xs font-mono mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          Munich, Germany · Open to opportunities
+          Munich, Germany · Founding Engineer @ ONYVEN
         </motion.div>
 
         <motion.h1 variants={item} className="text-5xl md:text-7xl font-bold tracking-tight text-slate-100 mb-4 leading-tight">
@@ -68,7 +79,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="text-lg text-slate-400 font-mono mb-4">
-          Software Engineer · M.Sc. Informatics @ TUM
+          {profile.title}
         </motion.p>
 
         <motion.p variants={item} className="text-slate-500 max-w-md mx-auto mb-10 leading-relaxed">
