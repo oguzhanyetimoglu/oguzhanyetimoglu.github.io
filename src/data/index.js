@@ -188,7 +188,7 @@ export const education = [
     degree: "M.Sc. Informatics",
     school: "Technical University of Munich (TUM)",
     location: "Munich, Germany",
-    period: "09/2023 – 09/2025",
+    period: "09/2021 – 09/2025",
     items: ["Focus: ML & LLMs · Software Engineering · Cybersecurity", "Thesis: AI-Powered Security: Leveraging Large Language Models for Network Anomaly-based Detection", "Grade: 1.6, 1.0 = best"],
   },
   {
